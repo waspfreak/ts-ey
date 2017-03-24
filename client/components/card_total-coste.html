@@ -1,0 +1,70 @@
+<template id="" name="totalCoste">
+  <div class="card ey-card-container">
+    <div class="title-container">
+
+      <div class="title-col-60 ey-card-title-txt">Total costs</div>
+
+      <div class="title-col-40">
+        <div class="w-dropdown">
+          <div class="dropdown_container">
+            {{#dropdownTrigger name="FY17"}}
+            <button class="dropdown-btn select">
+              FY17<i class="dropdown-icon material-icons">arrow_drop_down</i>
+            </button>
+            {{/dropdownTrigger}}
+            {{#dropdown name="FY17" classes="dropdown--menu" align="left"}}
+            <ul class="dropdown__menu dropdown-list">
+              <li >FY16</li>
+              <li >FY15</li>
+            </ul>
+            {{/dropdown}}
+          </div><!--/.dropdown_container -->
+        </div>
+      </div>
+
+    </div><!--/.ey-card-title ey-card-total-coste-title -->
+
+    <div class="ey-card-tostal-coste">
+      <div class="ey-card-tostal-coste-left">
+        <img class="ey-card-tostal-coste-img" src="images/total-coste-grafic.png" alt="">
+      </div>
+      <div class="ey-card-tostal-coste-right">
+        <ul class="ey-card-tostal-coste-list">
+          <li class="ey-card-tostal-coste-list_item title">
+            <span class="ey-card-tostal-coste-list_item__item title">Item</span>
+            <span class="number-percent pc">PC %</span>
+            <span class="number-coste">Cost</span>
+          </li>
+          <li class="ey-card-tostal-coste-list_item">
+            <span class="i-box grey-tint2"></span>
+            <span class="ey-card-tostal-coste-list_item__item">Vendor costs</span>
+            <span class="number-percent number-coste">59%</span>
+            <span class="number-coste">$5.1M</span>
+          </li>
+          <li class="ey-card-tostal-coste-list_item">
+            <span class="i-box grey-tint1"></span>
+            <span class="ey-card-tostal-coste-list_item__item">Taxes</span>
+            <span class="number-percent number-coste">18%</span>
+            <span class="number-coste">$1.5M</span>
+          </li>
+          <li class="ey-card-tostal-coste-list_item">
+            <span class="i-box grey-dark"></span>
+            <span class="ey-card-tostal-coste-list_item__item">Assignment costs</span>
+            <span class="number-percent number-coste single-digit">7%</span>
+            <span class="number-coste">$0.7M</span>
+          </li>
+          <li class="ey-card-tostal-coste-list_item">
+            <span class="i-box black"></span>
+            <span class="ey-card-tostal-coste-list_item__item">Stay at home costs</span>
+            <span class="number-percent number-coste">16%</span>
+            <span class="number-coste">$1.3M</span>
+          </li>
+          <li class="ey-card-tostal-coste-list_item">
+            <span class="ey-card-tostal-coste-list_item__item title">Total</span>
+            <span class="number-coste">$8.6M</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>

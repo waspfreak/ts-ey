@@ -1,0 +1,43 @@
+<template name="dashboardEmployeeOn">
+  <div class="ey-container-main w-container">
+    <div class="row-main w-row">
+      <div class="col-nav-left w-col w-col-3">
+        {{> navLeftEmployee}}
+      </div><!-- /.col-nav-left w-col w-col-3 -->
+      <div class="ey-col-2_right w-col w-col-9">
+        <div class="ey-col-2_right__container">
+         {{> chatbot name="Lisa"}}
+          <div class="ey-main-header--container">
+              {{> headerEmployee}}
+          </div>
+          <div class="">
+            {{>cardEmployeeStatus2}}
+          </div>
+          <div class="ey-main-right-row w-row">
+            <div class="ey-main-right-col-1 w-col w-col-8">
+              <div class="div-righ-col-box1">
+                <div>
+                  {{> travelAssessement}}
+                  {{> calendarCard1}}
+                  {{> emergencyInfoCard}}
+                  {{> travelCardServicesOn}}
+
+                </div>
+              </div>
+            </div><!-- main col-->
+            <div class="ey-main--col-2 w-col w-col-4">
+              <div>
+                {{> actionCardData
+                  actionItemCard=actionItem2
+                  titleValueCard=titleValue2
+                }}
+              </div>
+              <div>{{> contactCard contacts=contacts}}</div>
+              <div>{{> cardAssistant}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

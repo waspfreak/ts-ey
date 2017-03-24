@@ -1,0 +1,76 @@
+<template id="" name="cardAssessments">
+  <!-- Assessments card -->
+  <div class=" card-map-container assessments">
+    <div class="card  map-card">
+        <div class="card-map">
+          <div class="card-map-col-left">
+            <img src="images/map.svg" alt="map">
+          </div><!-- /.card-map-col-left -->
+
+          <div class="card-map-col-right">
+          <div class="w-dropdown">
+            <div class="dropdown_container">
+              {{#dropdownTrigger name="map-card-dropdown"}}
+                <button class="dropdown-btn select">Assessments <i class="dropdown-icon material-icons">arrow_drop_down</i></button>
+              {{/dropdownTrigger}}
+
+              {{#dropdown name="map-card-dropdown" classes="dropdown--menu" align="left"}}
+                <ul class="dropdown__menu dropdown-list">
+                  <li class="link-dropdow-card-map">Summary</li>
+                  <li class="link-dropdow-card-map">Trending</li>
+                </ul>
+              {{/dropdown}}
+             </div>
+           </div>
+
+            <div class="assessement-list">
+              <ul class="ey-card-tostal-coste-list">
+            <!-- <label class="ey-card-tostal-coste-list-title">Breakdown</label> -->
+            <li class="ey-card-tostal-coste-list_item title">
+              <span class="ey-card-tostal-coste-list_item__item title">Item</span>
+              <span class="number-coste title">No.</span>
+            </li>
+            <li class="ey-card-tostal-coste-list_item">
+              <span class="i-box grey-green"></span>
+              <span class="ey-card-tostal-coste-list_item__item">Valid ID</span>
+              <span class="number-coste">207</span>
+            </li>
+            <li class="ey-card-tostal-coste-list_item">
+               <span class="i-box grey-green"></span>
+              <span class="ey-card-tostal-coste-list_item__item">Valid ID and supporting letter</span>
+              <span class="number-coste">138</span>
+            </li>
+            <li class="ey-card-tostal-coste-list_item">
+              <span class="i-box orange"></span>
+              <span class="ey-card-tostal-coste-list_item__item">Business visa</span>
+              <span class="number-coste">79</span>
+            </li>
+            <li class="ey-card-tostal-coste-list_item">
+              <span class="i-box orange"></span>
+              <span class="ey-card-tostal-coste-list_item__item">Work permit</span>
+              <span class="number-coste">84</span>
+            </li>
+            <li class="ey-card-tostal-coste-list_item">
+              <span class="i-box grey-red"></span>
+              <span class="ey-card-tostal-coste-list_item__item">Specialist visa/permit</span>
+              <span class="number-coste">10</span>
+            </li>
+            <li class="ey-card-tostal-coste-list_item">
+              <span class="i-box grey-red"></span>
+              <span class="ey-card-tostal-coste-list_item__item ">In progress</span>
+              <span class="number-coste">101</span>
+            </li>
+          </ul>
+            </div>
+
+          </div><!-- /.card-map-col-right -->
+        </div>
+      </div>
+    </div>
+
+      <div class="state-compliance">
+        {{> immigrationEmployee}}
+      </div>
+
+  <!-- Assessments card -->
+</template>

@@ -1,0 +1,46 @@
+<template name="calendarEntriesVerifyCard">
+  <div class="card ey-card-container calendar-entries-card">
+    <div class="title-container">
+      <div class="ey-card-title-txt">Calendar entries</div>
+    </div>
+    <div class="calendar-entries-content">
+      <div class="text-container verify">
+        <div class="text">
+          We were unable to confidently predict the calendar entries between December 4 and December 9.
+        </div>
+        <div class="text">
+          We thought you were working in the AM and PM that day in <strong>Shenzhen</strong>. Is this correct?
+        </div>
+      </div>
+      <div class="calendar-entries-form-container">
+        <div class="entries-form verify">
+          <div class="form-field">
+            <div class="input-form">
+              <div class="w-clearfix w-dropdown" data-delay="0">
+                <label class="label">Activity</label>
+                <div class="dropdown_container">
+                  {{#dropdownTrigger name="Policy-Type"}}
+                  <button class="dropdown-btn">Work<i class="dropdown-icon material-icons">arrow_drop_down</i>
+                  </button>
+                  {{/dropdownTrigger}}
+
+                  {{#dropdown name="Policy-Type" classes="dropdown--menu" align="left"}}
+                  <ul class="dropdown__menu dropdown-list">
+                  </ul>
+                  {{/dropdown}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bubble-container">
+          <div class="button-container verify">
+            <a class="ey-btn-grey add-verify-entry"><span class="ey-btn-grey_txt">Add</span></a>
+            <a class="ey-btn-grey"><span class="ey-btn-grey_txt">Ignore</span></a>
+            <a class="ey-btn-skip"><span class="ey-btn-grey_txt">Skip</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

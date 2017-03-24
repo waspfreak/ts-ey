@@ -1,0 +1,94 @@
+<template name="employeeProfileStatus">
+
+	<div class="employee-profile-status card ey-card-container ey-card-container-large">
+	    <div class="title-container">
+
+				<div class="title-col-80 ey-card-title-txt">Employee status</div>
+
+				<div class="title-col-20">
+					<div class="w-dropdown">
+						<div class="dropdown_container">
+							{{#dropdownTrigger name="DropdownFY17_3"}}
+								<button class="dropdown-btn select">FY17 <i class="dropdown-icon material-icons">arrow_drop_down</i></button>
+							{{/dropdownTrigger}}
+
+							{{#dropdown name="DropdownFY17_3" classes="dropdown--menu" align="left"}}
+								<ul class="dropdown__menu dropdown-list">
+									<li class="ey-dropdown-list_item_link w-dropdown-link">FY16</li>
+									<li class="ey-dropdown-list_item_link w-dropdown-link">FY15</li>
+								</ul>
+							{{/dropdown}}
+						</div>
+					</div>
+
+	      </div><!--/.title-container -->
+
+	    </div>
+
+	    <div class="ey-card-content">
+	      <div class="employee-profile-status__table-row employee-profile-status__table-header">
+	        <div class="employee-profile-status__table-col-activity">Activity</div>
+	        <div class="employee-profile-status__table-col-due-date">Due</div>
+	        <div class="employee-profile-status__table-col-status">Status</div>
+	        <div class="employee-profile-status__table-col-reason">Reason</div>
+	      </div>
+
+	      <div class="employee-profile-status__table-row employee-profile-status__table-body">
+	        <div class="employee-profile-status__table-col-activity">Immigration status</div>
+	        <div class="employee-profile-status__table-col-due-date">01/03/17</div>
+	        <div class="employee-profile-status__table-col-status ">
+	        	<div class="employee-profile-status__tag complete">Complete</div>
+	        </div>
+	        <div class="employee-profile-status__table-col-reason">-</div>
+	      </div>
+
+	      <div class="employee-profile-status__table-row employee-profile-status__table-body">
+	        <div class="employee-profile-status__table-col-activity"> Briefing status</div>
+	        <div class="employee-profile-status__table-col-due-date">01/30/17</div>
+	        <div class="employee-profile-status__table-col-status ">
+	        	<div class="employee-profile-status__tag scheduled">Scheduled</div>
+	        </div>
+	        <div class="employee-profile-status__table-col-reason">-</div>
+	      </div>
+
+	      <div class="employee-profile-status__table-row employee-profile-status__table-body clickable expandable">
+	        <div class="employee-profile-status__table-col-activity">Tax return: UK</div>
+	        <div class="employee-profile-status__table-col-due-date">01/03/17</div>
+	        <div class="employee-profile-status__table-col-status ">
+	        	<div class="employee-profile-status__tag complete">Complete</div>
+	        </div>
+	        <div class="employee-profile-status__table-col-reason">-</div>
+
+	        <div class="employee-profile-status__col-details">
+	        	<div> Last updated: 01/02/17 </div>
+	        	<div> All data received | Submitted | Liability: £3,000 | Settlement: £100 | Paid</div>
+	        </div>
+	      </div>
+
+	      <div class="employee-profile-status__table-row employee-profile-status__table-body clickable expandable">
+	        <div class="employee-profile-status__table-col-activity">Tax return: Bolivia</div>
+	        <div class="employee-profile-status__table-col-due-date">03/31/17</div>
+	        <div class="employee-profile-status__table-col-status ">
+	        	<div class="employee-profile-status__tag incomplete">Incomplete</div>
+	        </div>
+	        <div class="employee-profile-status__table-col-reason">Tax organizer</div>
+
+	        <div class="employee-profile-status__col-details">
+	        	<div> Last updated: 03/02/17 </div>
+	        	<div> Insufficient data | In progress </div>
+	        </div>
+	      </div>
+
+	      <div class="employee-profile-status__table-row employee-profile-status__table-body">
+	        <div class="employee-profile-status__table-col-activity">Payment status</div>
+	        <div class="employee-profile-status__table-col-due-date">03/31/17</div>
+	        <div class="employee-profile-status__table-col-status ">
+	        	<div class="employee-profile-status__tag complete">Complete</div>
+	        </div>
+	        <div class="employee-profile-status__table-col-reason">-</div>
+	      </div>
+	    </div>
+
+    </div>
+
+</template>

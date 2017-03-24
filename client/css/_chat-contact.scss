@@ -1,0 +1,233 @@
+.chat-live_input-box.input-contact {
+    padding: 5px;
+    .button-add{
+      background: transparent;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      float: right;
+      right: 9px;
+      i{
+        font-size: 32px;
+        color: $grey-alt;
+        padding-top: 5px;
+
+      }
+    }
+}
+.chat-live_input-box.input-contact .input{
+  width: 84% !important;
+  margin-top: 3px;
+}
+
+.chat-live_question.chat-live_question-contact{
+    margin-bottom: 10px;
+    .chat-line_bloc.contact{
+      margin-bottom: 10px;
+    }
+    .content {
+      overflow: hidden;
+        .icon{
+          display: inline-block;
+          float: left;
+          i{
+            color: $grey-alt;
+            font-size: 30px;
+            //float: left;
+            margin-right: 5px;
+          }
+        }
+        .text {
+          display: inline-block;
+          float: left;
+          padding-top: 3px;
+          padding-bottom: 0;
+        }
+    }
+}
+.chatchat-contact.open {
+  min-height: 525px;
+  margin-bottom: 62px;
+}
+.chat-main-con{
+  position: relative;
+  bottom: 0;
+}
+
+.chat-main-contact{
+  bottom: -127px;
+  position: relative;
+}
+
+.avatar.contact{
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 50%;
+}
+
+/*CHAT CONTACT OPTION*/
+.option{
+  z-index: 10;
+  display: none;
+  &.open{
+    display: block;
+  }
+  .chat-contact-option{
+      background: $grey-opacity-1;
+      height: 100%;
+      margin-bottom: 100px;
+      position: absolute;
+      width: 100%;
+      z-index: 100;
+      .chat-contact-option-list{
+        background: $dark-grey;
+        color: #fff;
+        font-family: $font-light;
+        &_list{
+          margin-left: 0;
+          padding-left: 0;
+          list-style: none;
+          display: block;
+          width: 100%;
+        }
+        &_item{
+          border-bottom: 1px solid #646464;
+          cursor: pointer;
+          display: block;
+          font-size: 16px;
+          overflow: hidden;
+          padding: 14px 24px;
+          width: 100%;
+          &:first-child{
+            border-top: 1px solid #646464;
+          }
+          .content-box{
+            display: block;
+            margin-top: 20px;
+            width: 100%;
+            &_img{
+              border-radius: 50%;
+              display: block;
+              height: 160px;
+              margin: 0 auto;
+              width: 160px;
+            }
+            .ey-btn-yellow{
+                display: block;
+                line-height: 1em;
+                margin-top: 30px;
+                max-height: 36px;
+                text-align: center;
+            }
+            &.hidden{
+              display: none;
+            }
+          }
+          .icon{
+            align-content: center;
+            align-items: center;
+            background-color: $grey-alt;
+            border-radius: 50%;
+            display: block;
+            display: flex;
+            float: left;
+            font-size: 24px;
+            height: 40px;
+            margin-right: 11px;
+            width: 40px;
+            &.active{
+                background-color: $yellow;
+                color: $grey-alt;
+            }
+            i{
+              padding-left: 7px;
+            }
+          }
+          .title{
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            height: 45px;
+          }
+        }
+      }
+  }
+}
+
+/*dropdown-subject*/
+
+.chat-contact-option{
+  .avalible-slots{
+    margin-top: 8px;
+    small{
+      font-size: 11px;
+      color: $grey-tint1;
+    }
+    .ey-btn-yellow{
+      margin-top: 0 !important;
+      text-decoration: none;
+    }
+    .ey-btn-grey.active{
+      background: $yellow;
+      color: $grey-alt;
+    }
+    .avalible-slots-btn-list{
+      display: block;
+      list-style: none;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-top: 4px;
+      padding-left: 0;
+      li{
+        font-size: 12px;
+        margin-right: 11px;
+        min-width: 80px;
+        padding: 10px 18px;
+        text-align: center;
+        &:last-child{
+          margin-right: 0;
+        }
+        &:nth-child(3){
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .content-box_dropdown {
+    margin-top: -15px;
+    .dropdown_container{
+      button{
+        display: inline-block;
+        width: 100%;
+        background: transparent;
+        text-align: left;
+        border-bottom: 1px solid #999;
+        font-size: 14px;
+        color: #fff;
+        padding-left: 0;
+        padding-right: 0;
+        font-family: $font-light;
+        i{
+          color: #fff;
+        }
+      }
+    }
+  }
+
+
+  .chat-contact-dropdown{
+    margin-top: 45px;
+    small{
+      color: $grey-tint1;
+      font-size: 11px;
+      margin-bottom: 0px;
+      display: block;
+    }
+    .dropdown-subject{
+      width: 100%;
+      display: block;
+      margin-bottom: 6px;
+    }
+  }
+}

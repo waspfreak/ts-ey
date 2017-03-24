@@ -1,0 +1,37 @@
+ $font-regular: 'Eyinterstate regular', 'Noto Sans',  Arial, Helvetica, sans-serif;
+ $font-light: 'Eyinterstate light', 'Noto Sans',  Arial, Helvetica, sans-serif;
+
+//$font-regular: 'Noto Sans',  Arial, Helvetica, sans-serif;
+//$font-light: 'Noto Sans',  Arial, Helvetica, sans-serif;
+//$font-bold: 700;
+
+
+/*Colors*/
+$yellow: #ffe600;
+$dark-grey: #333333;
+$grey-alt: #646464;
+$grey: #808080;
+$grey-tint1: #999999;
+$grey-tint2: #c0c0c0;
+$grey-tint3: #f0f0f0; //border
+$grey-tint4: #515151;
+$blue: #30659B;
+$red: #f04c3e;
+$green: #2c973e;
+$black: #000000;
+$white: #ffffff;
+
+//Non-brand colours:
+$orange: #fbae17;
+$shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
+$grey-opacity-1: rgba(51, 51, 51, 0.8);
+$grey-opacity-2: rgba(51, 51, 51, 0.5);
+
+
+.green-color{
+  color: $green;
+}
+
+.red-color{
+  color: $red;
+}

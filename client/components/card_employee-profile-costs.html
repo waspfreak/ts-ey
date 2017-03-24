@@ -1,0 +1,78 @@
+<template name="employeeProfileCosts">
+
+	<div class="employee-profile-costs card ey-card-container ey-card-container-large">
+	    <div class="title-container">
+	      <div class="title-col-80 ey-card-title-txt">Annual assignment costs</div>
+
+				<div class="title-col-20">
+	        {{> dropdownHeadMobilityYear}}
+	      </div>
+
+			</div><!-- -->
+
+	    <div class="ey-card-content">
+	      <div class="employee-profile-costs__table-row employee-profile-status__table-header">
+	        <div class="employee-profile-costs__table-col-cost">Cost</div>
+	        <div class="employee-profile-costs__table-col-budgeted">Budgeted</div>
+	        <div class="employee-profile-costs__table-col-actual">Actual</div>
+	        <div class="employee-profile-costs__table-col-variance">Variance</div>
+	      </div>
+
+	      <div class="employee-profile-costs__table-row clickable expandable employee-profile-costs__table-body">
+	        <div class="employee-profile-costs__table-col-cost">Salary</div>
+	        <div class="employee-profile-costs__table-col-budgeted">$75,000</div>
+	        <div class="employee-profile-costs__table-col-actual ">$75,864</div>
+	        <div class="employee-profile-costs__table-col-variance red">-864</div>
+	      </div>
+
+	      <div class="employee-profile-costs__table-row clickable expandable employee-profile-costs__table-body  employee-profile-costs__table-body-details first">
+	        <div class="employee-profile-costs__table-col-cost">Home UK</div>
+	        <div class="employee-profile-costs__table-col-budgeted">$15,000 (20%)</div>
+	        <div class="employee-profile-costs__table-col-actual ">$14,753</div>
+	        <div class="employee-profile-costs__table-col-variance green">+247</div>
+	      </div>
+
+	      <div class="employee-profile-costs__table-row clickable expandable employee-profile-costs__table-body employee-profile-costs__table-body-details second">
+	        <div class="employee-profile-costs__table-col-cost">Host Bolivia</div>
+	        <div class="employee-profile-costs__table-col-budgeted">$60,000 (80%)</div>
+	        <div class="employee-profile-costs__table-col-actual ">$61,111</div>
+	        <div class="employee-profile-costs__table-col-variance red">-1,111</div>
+	      </div>
+
+	      <div class="employee-profile-costs__table-row employee-profile-costs__table-body">
+	        <div class="employee-profile-costs__table-col-cost">Travel</div>
+	        <div class="employee-profile-costs__table-col-budgeted">$12,000</div>
+	        <div class="employee-profile-costs__table-col-actual ">$11,523</div>
+	        <div class="employee-profile-costs__table-col-variance green">+476</div>
+	      </div>
+
+	      <div class="employee-profile-costs__table-row employee-profile-costs__table-body">
+	        <div class="employee-profile-costs__table-col-cost">Tax</div>
+	        <div class="employee-profile-costs__table-col-budgeted">$35,000</div>
+	        <div class="employee-profile-costs__table-col-actual ">$35,231</div>
+	        <div class="employee-profile-costs__table-col-variance red">-231</div>
+	      </div>
+
+	      <div class="employee-profile-costs__table-row employee-profile-costs__table-body">
+	        <div class="employee-profile-costs__table-col-cost">Immigration</div>
+	        <div class="employee-profile-costs__table-col-budgeted">$3,000</div>
+	        <div class="employee-profile-costs__table-col-actual ">$1,234</div>
+	        <div class="employee-profile-costs__table-col-variance green">+1,766</div>
+	      </div>
+
+	      <div class="employee-profile-costs__table-row employee-profile-costs__table-body">
+	        <div class="employee-profile-costs__table-col-cost">Out of scope</div>
+	        <div class="employee-profile-costs__table-col-budgeted">$0</div>
+	        <div class="employee-profile-costs__table-col-actual ">$2,500</div>
+	        <div class="employee-profile-costs__table-col-variance red">-2,500</div>
+	      </div>
+
+	    </div>
+
+	    <div class="ey-card-large-footer">
+        	<a href="#" class="ey-card-travel_blue-txt">View more <i class="material-icons chevron_right">chevron_right</i></a>
+    	</div>
+
+    </div>
+
+</template>

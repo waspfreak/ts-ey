@@ -1,0 +1,19 @@
+<template name="nav">
+  <li class="ey-left-nav-list-item {{ maybeSelected }} {{#if subMenu}}subMenu{{/if}}">
+  	{{#if link}}
+	    <a class="ey-nav-link-bloc w-inline-block {{#if parentNavItem}} parentNavItem {{/if}}" href="{{link}}" id="{{id}}">
+	      <div class="ey-nav-link-text w-clearfix">
+	        <i class="material-icons nav-ico">{{icon}} </i>
+	        {{text}}
+	      </div>
+	    </a>
+  	{{else}}
+	    <span class="ey-nav-link-bloc w-inline-block {{#if parentNavItem}} parentNavItem {{/if}}" onClick="" id="{{id}}">
+	      <div class="ey-nav-link-text w-clearfix">
+	        <i class="material-icons nav-ico">{{icon}} </i>
+	        {{text}}
+	      </div>
+	    </span>
+  	{{/if}}
+  </li>
+</template>

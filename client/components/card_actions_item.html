@@ -1,0 +1,72 @@
+<template id="" name="actionItem">
+    <li class="title link{{idLink}}">
+      <div class="title-container-drop {{position}}">
+        <i class="timeline-icon material-icons icon-change-grey">panorama_fish_eye</i>
+        {{#if iconAction}}
+          <i class="timeline-icon material-icons {{colorIcon}} icon-change {{iconHideBeforeUpload}} hidden">radio_button_checked</i>
+        {{/if}}
+          <span class="{{position}}">{{title}}</span>
+        {{#if clickOpen}}
+        <i class="dropdown-icon material-icons up{{idLink}} {{openClose}}">arrow_drop_up</i>
+        <i class="dropdown-icon material-icons down{{idLink}}">arrow_drop_down</i>
+
+        {{/if}}
+      </div>
+
+        {{#if actionSubItem}}
+          {{#each actionSubItem}}
+              <div class="sub-list-item sublink{{idSublik}} {{showGreeStatus}} {{openClose}}">
+                <div class="test">
+                  <div class="sub-list-item_content">
+                    <i class="timeline-icon material-icons {{iconColor}} {{iconChangeSmall}} small">fiber_manual_record</i>
+                    <p>{{titleSub}}</p>
+                    <span class="{{#if ifUlploadChange}}{{ifUlploadChange}}{{/if}}">{{subTitle}}</span>
+                    {{#if subTitle2 }}<span class="if-upload-show hidden {{ifUploadShow}}">{{subTitle2}}</span>{{/if}}
+
+                    <!-- ifUlploadChange: "if-upload-hide",
+                    ifUploadShow: "if-upload-show" -->
+                  </div>
+                </div>
+              </div>
+          {{/each}}
+        {{/if}}
+    </li><!--/.title -->
+</template>
+
+<!-- Show in secondary item card in viewAssignmentDashboard -->
+<template id="" name="actionItemSec">
+    <li class="title link{{idLink}} {{lastLink}}">
+
+       <!-- hide line ul -->
+      <div class="title-container-drop {{position}}">
+        <span class="{{spanHideL}} "></span><!--! hide line ul -->
+        <i class="timeline-icon material-icons icon-change-grey">panorama_fish_eye</i>
+        {{#if iconAction}}
+        <i class="timeline-icon material-icons {{colorIcon}} icon-change">radio_button_checked</i>
+        {{/if}}
+        <span>{{title}}</span>
+
+        {{#if clickOpen}}
+          <i class="dropdown-icon material-icons up{{idLink}} {{openClose}}">arrow_drop_up</i>
+          <i class="dropdown-icon material-icons down{{idLink}}">arrow_drop_down</i>
+
+        {{/if}}
+      </div>
+
+        {{#if actionSubItem}}
+          {{#each actionSubItem}}
+              <div class="sub-list-item sublink{{idSublik}} {{showGreeStatus}} {{openClose}}">
+              {{#if spanHideSubL}}<span class="{{spanHideSubL}}"></span>{{/if}}
+                <!--! hide line ul -->
+                <div class="test">
+                  <div class="sub-list-item_content">
+                    <i class="timeline-icon material-icons {{iconColor}} {{iconChangeSmall}} small">fiber_manual_record</i>
+                    <p>{{titleSub}}</p>
+                    <span>{{subTitle}}</span>
+                  </div>
+                </div>
+              </div>
+          {{/each}}
+        {{/if}}
+    </li><!--/.title -->
+</template>

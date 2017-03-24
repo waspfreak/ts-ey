@@ -1,0 +1,138 @@
+
+@import "css/main.scss";
+@import "ipad.scss";
+
+/*@import url("css/lon-ey-mobility-prototype.webflow.css");*/
+@import url("css/normalize.css");
+@import url("css/webflow.css");
+
+
+
+/* CSS declarations go here */
+/*DONT DELETE THIS PLEASE*/
+body{
+  background: linear-gradient(to bottom,  rgba(243, 243, 243, 0.9) 0%, rgba(71, 71, 71, 0.5) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100%;
+}
+/*DONT DELETE THIS PLEASE*/
+
+.home{
+    background: linear-gradient(to bottom,  rgba(83, 83, 83, 0.6) 0%, rgba(10, 10, 10, 0.7) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100%;
+  }
+
+
+  /*background-image: url('images/login-background.png');
+  z-index: 0;
+  background-image:
+          -webkit-linear-gradient(to bottom,
+          rgba(83, 83, 83, 0.9),
+          rgba(10, 10, 10, 0.8)
+          );
+  background-image:
+          -moz-linear-gradient(to bottom,
+          rgba(83, 83, 83, 0.9),
+          rgba(10, 10, 10, 0.8)
+          );
+  background-image:
+          -o-linear-gradient(to bottom,
+          rgba(83, 83, 83, 0.9),
+          rgba(10, 10, 10, 0.8)
+          );
+  background-image:
+          -ms-linear-gradient(to bottom,
+          rgba(83, 83, 83, 0.9),
+          rgba(10, 10, 10, 0.8)
+          ); /* IE10+ */*/
+}
+
+
+@font-face {
+    font-family: 'Eyinterstate regular';
+    src: url('./fonts/EYInterstate-Regular.eot');
+    src: url('./fonts/EYInterstate-Regular.eot?#iefix') format('embedded-opentype'), url('./fonts/EYInterstate-Regular.woff') format('woff'), url('./fonts/EYInterstate-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EYInterstate light';
+    src: url('./fonts/EYInterstate-Light.eot');
+    src: url('./fonts/EYInterstate-Light.eot?#iefix') format('embedded-opentype'), url('./fonts/EYInterstate-Light.woff') format('woff'), url('./fonts/EYInterstate-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EYInterstate bold';
+    src: url('./fonts/EYInterstate-Bold.eot');
+    src: url('./fonts/EYInterstate-Bold.eot?#iefix') format('embedded-opentype'), url('./fonts/EYInterstate-Bold.woff') format('woff'), url('./fonts/EYInterstate-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EYInterstate italic';
+    src: url('./fonts/EYInterstate-Italic.eot');
+    src: url('./fonts/EYInterstate-Italic.eot?#iefix') format('embedded-opentype'), url('./fonts/EYInterstate-Italic.woff') format('woff'), url('./fonts/EYInterstate-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Eyinterstate regular';
+  src: url('./fonts/EYInterstate-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Eyinterstate';
+  src: url('./fonts/EYInterstate-Italic.ttf') format('truetype'), url('../fonts/EYInterstate-LightBoldItalic.ttf') format('truetype'), url('../fonts/EYInterstate-LightItalic.ttf') format('truetype'), url('../fonts/EYInterstate-BoldItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'Eyinterstate light';
+  src: url('./fonts/EYInterstate-Light.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Eyinterstate lightbold';
+  src: url('./fonts/EYInterstate-LightBold.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Eyinterstate bold';
+  src: url('./fonts/EYInterstate-Bold.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fontawesome webfont';
+    src: url('../fonts/fontawesome-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blokkneue';
+    src: url('./fonts/BLOKKNeue-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}

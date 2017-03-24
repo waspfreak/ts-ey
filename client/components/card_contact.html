@@ -1,0 +1,25 @@
+<template id="" name="contactCard">
+  <div class="card contact_card ey-card-container">
+    <div class="title-container">
+      <div class="title-col-100 ey-card-title-txt">Contacts</div>
+    </div>
+    <div class="contact-card-list">
+      {{#each contacts}}
+        {{> contactItem }}
+      {{/each}}
+    </div>
+  </div>
+</template>
+
+<template id="" name="assistantCard">
+  <div class="card contact_card ey-card-container">
+    <div class="title-container">
+      <div class="title-col-100 ey-card-title-txt">Assistant</div>
+    </div>
+    <div class="contact-card-list">
+      {{#each assistant}}
+        {{> contactItem }}
+      {{/each}}
+    </div>
+  </div>
+</template>

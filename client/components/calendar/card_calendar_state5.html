@@ -1,0 +1,22 @@
+<template name="calendarCardState5">
+  <div class="card ey-card-container calendar-card">
+    <div class="title-container">
+      <div class="ey-card-title-txt">December 2018</div>
+      <div class="calendar-arrow-icons">
+        <i class="material-icons">chevron_left</i>
+        <i class="material-icons">chevron_right</i>
+      </div>
+      <div class="material-icons calendar-info">info</div>
+    </div>
+
+    <div class="calendar-content">
+      <div class="calendar-grid">
+        {{> calendarGridState5}}
+      </div>
+      <div class="calendar-controls">
+        {{> calendarControls}}
+      </div>
+    </div>
+  </div>
+  {{> calendarEntriesVerifyCard}}
+</template>

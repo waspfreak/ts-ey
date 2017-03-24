@@ -1,0 +1,19 @@
+<template id="" name="loginPage">
+
+
+<div id="loginpage" class="loginpage" style="display: block"></div>
+
+
+<script>
+stormpath.showLogin();
+stormpath.on('authenticated', function() {
+  //console.log('You\'re authenticated!');
+
+  document.getElementById('loginpage').style.display = 'none';
+  stormpath.remove();
+  Router.go('/home');
+
+});
+</script>
+
+</template>

@@ -1,0 +1,18 @@
+<template name="calendarDay">
+  <div class="grid-row-item calendar-day">
+    {{#if today}}
+      <div class="today"></div>
+    {{/if}}
+    <div class="calendar-day-container {{#if modal}}modal-link{{/if}}">
+      <div class="date {{#if disabledDate}}disabled{{/if}}">
+        {{date}}
+        {{#if warning}}
+          <span class="material-icons red-color date-warning">warning</span>
+        {{/if}}
+      </div>
+      {{#each boxes}}
+        {{> dayBox}}
+      {{/each}}
+    </div>
+  </div>
+</template>

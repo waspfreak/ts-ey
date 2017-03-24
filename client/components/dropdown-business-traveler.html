@@ -1,0 +1,19 @@
+<template name="dropdownBusinessTraveler">
+		<div class="w-dropdown">
+			<div class="dropdown_container">
+			  {{#dropdownTrigger name="testDropdown8"}}
+			    <button class="dropdown-btn select">{{dropdownTitle}}<i class="dropdown-icon material-icons">arrow_drop_down</i></button>
+			  {{/dropdownTrigger}}
+
+			  {{#dropdown name="testDropdown8" classes="dropdown--menu" align="left"}}
+			    <ul class="dropdown__menu dropdown-list">
+						<li class="ey-dropdown-list_item_link w-dropdown-link" >Travel summary</li>
+						<li class="ey-dropdown-list_item_link w-dropdown-link" >Permanent establishment risk</li>
+						<li class="ey-dropdown-list_item_link w-dropdown-link" >Travel frequency</li>
+						<li class="ey-dropdown-list_item_link w-dropdown-link" >Cost</li>
+			    </ul>
+			  {{/dropdown}}
+			</div>
+		</div>
+
+</template>

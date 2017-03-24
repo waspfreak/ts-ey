@@ -1,0 +1,64 @@
+<template id="" name="modalTaxOrganizer">
+  <!--modal -->
+  <div class="overlay hidden"> <!-- hidden-->
+    <div class="modal-box modal-tax-organizer">
+      <div class="" style="position: relative">
+        {{> titleCard title="Tax organizer Brazil FY18" icon="close" iconAction="close"}}
+      </div>
+
+      <div class="modal-content modal-tax-organizer-content second">
+        <p class="modal-tax-organizer_text-info">We have identified the following information to complete sections <b>3.1 Other Income</b> and <b>5.1 Other Information</b> of your tax organizer for Brazil FY18:</p>
+        <ul class="modal-tax-organizer_list list">
+          <li class="modal-tax-organizer_list-item">
+            <span class="modal-tax-organizer_list-item-title">Name</span>
+            <span class="modal-tax-organizer_list-item-content">Lisa Marie Wiltz</span>
+          </li>
+          <li class="modal-tax-organizer_list-item">
+            <span class="modal-tax-organizer_list-item-title">Address</span>
+            <span class="modal-tax-organizer_list-item-content">Mrs Lisa Marie Wiltz, 1 Copacabana, Rio De Janeiro, 13010-111</span>
+          </li>
+          <li class="modal-tax-organizer_list-item">
+            <span class="modal-tax-organizer_list-item-title">NI Number</span>
+            <span class="modal-tax-organizer_list-item-content">LW123456AB</span>
+          </li>
+          <li class="modal-tax-organizer_list-item">
+            <span class="modal-tax-organizer_list-item-title">NI Contributions</span>
+            <span class="modal-tax-organizer_list-item-content">3936 GBP</span>
+          </li>
+          <li class="modal-tax-organizer_list-item">
+            <span class="modal-tax-organizer_list-item-title">Total gross pay</span>
+            <span class="modal-tax-organizer_list-item-content">53934.48 GBP</span>
+          </li>
+        </ul>
+        <p>&nbsp;</p>
+        <p class="modal-tax-organizer_text-bold">Please confirm if this information is correct</p>
+        <p class="modal-tax-organizer_text-info">You can amend the information if it has been captured incorrectly. The information will be used to complete relevant entries in your tax organizer</p>
+      </div>
+
+      <!--Second Modal content -->
+      <div class="modal-content modal-tax-organizer-content first ">
+        <p class="modal-tax-organizer_text-info">Do you wish to use the wage statement, uploaded 21 December 2018, to complete your tax organizer for Brazil FY18?</p>
+        <div class="modal-tax-organizer_img-container">
+          <img class="modal-tax-organizer_img" src="images/tax-organizer-img.png" alt="">
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <div class="btn-container first-btn">
+          {{> basicBtn class="ey-btn-grey" extraClass="edit-btn" title="No"}}
+          {{> basicBtn class="ey-primary-button" extraClass="validate" title="Yes"}}
+        </div>
+        <div class="btn-container sec-btn">
+          {{> basicBtn class="ey-btn-grey" extraClass="no-btn" title="Edit"}}
+          {{> basicBtn class="ey-primary-button" extraClass="yes-btn" title="Validate"}}
+        </div>
+      </div>
+    </div><!--/.modal-box -->
+
+
+  </div>
+  <!--modal -->
+
+
+
+</template>

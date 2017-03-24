@@ -1,0 +1,94 @@
+<template id="" name="chatbot">
+  <div class="chat js-chat" id="chat">
+    {{>chatbotBtn}}
+    {{> chatContainer}}
+  </div>
+</template>
+
+<!--/.BTN TEMPLATE -->
+<template name="chatbotBtn">
+  <div class="chat-btn_container js-chat-box">
+    <span onClick="" class="chat_btn">
+      <i class=" icon material-icons">chat_bubble_outline</i>
+    </span>
+  </div>
+</template>
+
+<!-- /.CONTAINER -->
+<template  name="chatContainer">
+  <div class="chat-main js-chatbot-show">
+    {{> chatHeader}}
+    <div class="chat-content">
+      <section class="chat-previous-box">
+        <span class="chat-previous-box_link" onClick="">
+          <i class="icon-left material-icons">chevron_left</i>
+          <span class="text">Previous conversations</span>
+        </span>
+        <span onClick=""><i class="icon-left material-icons">mode_edit</i></span>
+      </section>
+      <section class="chat-live-container">
+        {{> chatLive}}
+      </section>
+    </div><!--/.chat-content -->
+  </div>
+</template>
+
+
+<!--/.CHAT HEADER -->
+<template id="" name="chatHeader">
+  <section class="chat-header">
+    <div class="chat-more-left">
+      <span onClick="">
+        <i class="material-icons">fiber_manual_record</i>
+        <i class="material-icons">fiber_manual_record</i>
+        <i class="material-icons">fiber_manual_record</i>
+      </span>
+    </div><!--/.chat-more-left -->
+    <div class="chat-header-user">
+      <div class="chat-header-user_pic">
+        <span onClick="">
+          <i class="material-icons">chat_bubble_outline</i>
+        </span>
+      </div>
+      <div class="chat-header-user_name">
+        <p class="title">EY:MO</p>
+        <p class="subtitle">Your helpful chatbot</p>
+      </div>
+    </div><!--/.chat-header-user -->
+    <div class="chat-header-user_close">
+      <i class="material-icons icon close">close</i>
+    </div>
+  </section>
+</template>
+
+<!-- LIVE -->
+<template name="chatLive">
+    <div class="chat-live">
+      <div class="chat-line_bloc">
+        <div id="chat-welcome" class="chat-live_answer animated fadeIn">
+          <span class="icon"><i class="material-icons">chat_bubble_outline</i></span>
+          <p class="content">Hi {{name}}, what can I help you with today?</p>
+        </div><!--/.chat-live_welcome -->
+      </div>
+
+      <div class="chat-line_bloc">
+        <div id="chat-question-container" class="chat-live_question animated fadeIn">
+          <p id="chat-question" class="content"></p>
+          <small>1m ago</small>
+        </div>
+      </div>
+
+      <div class="chat-line_bloc">
+        <div id="chat-answer-container" class="chat-live_answer animated fadeIn">
+          <span class="icon"><i class="material-icons">chat_bubble_outline</i></span>
+          <p id="chat-answer" class="content"></p>
+        </div>
+      </div>
+
+    </div><!-- /.chat-live-->
+
+    <div class="chat-live_input-box">
+      <input id="chat-input" class="input" autocapitalize="off" type="text" placeholder="Write a reply">
+      <!-- <button id="chat-submit" type="submit"><i class="material-icons">add_box</i></button> -->
+    </div><!--/._input-box -->
+</template>

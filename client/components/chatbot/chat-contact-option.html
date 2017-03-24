@@ -1,0 +1,92 @@
+<template id="" name="chatContactOption">
+  <div class="chat-contact-option animated fadeIn">
+    {{>chatContactOptionList}}
+  </div>
+</template>
+
+
+<template  name="chatContactOptionList">
+  <div class="chat-contact-option-list">
+    <ul class="chat-contact-option-list_list">
+      {{> chatContactOptionItem}}
+    </ul>
+  </div>
+</template>
+
+<template name="chatContactOptionItem">
+    <li class="chat-contact-option-list_item">
+        <div class="js-skype">
+          <span class="icon js-icon1"><i class="material-icons">phone</i></span>
+          <span class="title">Call</span>
+        </div>
+        {{> contentSkipe  img="/images/diana-kraub.png" call="Call Diana now"}}
+    </li>
+
+    <li class="chat-contact-option-list_item">
+      <div class="js-call">
+        <span class="icon js-icon2"><i class="material-icons">book</i></span>
+        <span class="title">Arrange a call back</span>
+      </div>
+      {{> contentCall}}
+    </li>
+
+    <li class="chat-contact-option-list_item ">
+      <div class="js-return">
+        <span class="icon"><i class="material-icons">chat_bubble_outline</i></span>
+        <span class="title">Return to chat</span>
+      </div>
+    </li>
+</template>
+
+<template name="contentSkipe">
+  <div class="content-box js-skype-content hidden animated fadeInDown">
+    <img class="content-box_img" src="{{img}}" alt=""/>
+    <span class="ey-btn-yellow" onClick="">{{call}}</span>
+  </div>
+</template>
+
+<template name="contentCall">
+  <div class="content-box js-call-content hidden animated fadeInDown">
+    <div class="content-box_dropdown">
+      {{> dropDownContactSub}}
+      {{> avalibleSlots}}
+    </div>
+  </div>
+
+</template>
+
+
+<!-- Dropdow-->
+<template name="dropDownContactSub">
+  <div class="chat-contact-dropdown">
+    <!-- <div class="dropdown-subject">
+      <div class="dropdown_container">
+        <small>Subject*</small>
+          <button class="dropdown-btn select">Tax <i class="dropdown-icon material-icons">arrow_drop_down</i></button>
+      </div>
+    </div> -->
+
+    <div class="dropdown-date">
+      <div class="dropdown_container">
+        <small>Date*</small>
+        <button class="dropdown-btn select">1 Mar 2018 <i class="dropdown-icon material-icons">arrow_drop_down</i></button>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="avalibleSlots">
+  <div class="avalible-slots">
+      <small>Avalible slots</small>
+      <ul class="avalible-slots-btn-list">
+        <li class="ey-btn-grey">13:00</li>
+        <li class="ey-btn-grey active">13:30</li>
+        <li class="ey-btn-grey">14:00</li>
+        <li class="ey-btn-grey">16:00</li>
+        <li class="ey-btn-grey">16:30</li>
+        <li class="ey-btn-grey">17:00</li>
+      </ul>
+      <span class="ey-btn-yellow" onClick="">Book this slot</span>
+  </div>
+
+</template>

@@ -1,0 +1,42 @@
+<template name="calendarControls">
+  {{#if fullYear}}
+    <div class="calendar-controls-dropdown">
+      <div class="w-dropdown calendar-dropdown">
+        <div class="dropdown_container">
+          {{#dropdownTrigger name="calendarDropdown"}}
+          <button class="dropdown-btn select">Full year summary<i class="dropdown-icon material-icons">arrow_drop_down</i></button>
+          {{/dropdownTrigger}}
+
+          {{#dropdown name="calendarDropdown" classes="dropdown--menu" align="left"}}
+          <ul class="dropdown__menu dropdown-list">
+            <li class="monthly-view-option">Monthly view</li>
+          </ul>
+          {{/dropdown}}
+        </div>
+      </div>
+    </div>
+  {{else}}
+    <div class="calendar-controls-dropdown">
+      <div class="w-dropdown calendar-dropdown">
+        <div class="dropdown_container">
+          {{#dropdownTrigger name="calendarDropdown"}}
+          <button class="dropdown-btn select">Monthly view<i class="dropdown-icon material-icons">arrow_drop_down</i></button>
+          {{/dropdownTrigger}}
+
+          {{#dropdown name="calendarDropdown" classes="dropdown--menu" align="left"}}
+          <ul class="dropdown__menu dropdown-list">
+            <li class="full-year-summary-option">Full year summary</li>
+          </ul>
+          {{/dropdown}}
+        </div>
+      </div>
+    </div>
+  {{/if}}
+  <div class="calendar-toggles">
+    {{#if initial}}
+      {{> calendarTogglesInitial}}
+    {{else}}
+      {{> calendarToggles}}
+    {{/if}}
+  </div>
+</template>

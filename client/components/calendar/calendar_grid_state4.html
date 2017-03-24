@@ -1,0 +1,38 @@
+<template name="calendarGridState4">
+  <div class="grid-container">
+    <div class="grid-row">
+      <div class="grid-row-item days-header">S</div>
+      <div class="grid-row-item days-header">M</div>
+      <div class="grid-row-item days-header">T</div>
+      <div class="grid-row-item days-header">W</div>
+      <div class="grid-row-item days-header">T</div>
+      <div class="grid-row-item days-header">F</div>
+      <div class="grid-row-item days-header">S</div>
+    </div>
+    <div class="grid-row">
+      {{#each row1}}
+        {{> calendarDay}}
+      {{/each}}
+    </div>
+    <div class="grid-row">
+      {{#each row2}}
+      {{> calendarDay}}
+      {{/each}}
+    </div>
+    <div class="grid-row">
+      {{#each row3}}
+      {{> calendarDay}}
+      {{/each}}
+    </div>
+    <div class="grid-row">
+      {{#each row4}}
+      {{> calendarDay}}
+      {{/each}}
+    </div>
+    <div class="grid-row">
+      {{#each row5}}
+      {{> calendarDay}}
+      {{/each}}
+    </div>
+  </div>
+</template>

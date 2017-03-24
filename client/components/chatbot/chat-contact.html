@@ -1,0 +1,106 @@
+<template  name="chatContact">
+  <div class="chat chatchat-contact">
+    {{> chatContainerCon}}
+  </div>
+</template>
+
+<!-- /.CONTAINER -->
+<template  name="chatContainerCon">
+
+  <div class="chat-main chat-main-con js-chat-contact-show">
+    {{> chatHeaderCon}}
+    <!-- option chat -->
+    <section class="option">
+        {{> chatContactOption}}
+    </section>
+    <div class="chat-content">
+      <section class="chat-previous-box">
+        <span class="chat-previous-box_link" onClick="">
+          <i class="icon-left material-icons">chevron_left</i>
+          <span class="text">Briefing <small>18h ago</small></span>
+        </span>
+        <span onClick=""><i class="icon-left search material-icons">search</i></span>
+        <span onClick=""><i class="icon-left material-icons">mode_edit</i></span>
+      </section>
+
+      <section class="chat-live-container">
+        {{> chatLiveCon}}
+      </section>
+    </div><!--/.chat-content -->
+  </div>
+</template>
+
+
+<!--/.CHAT HEADER -->
+<template  name="chatHeaderCon">
+  <section class="chat-header">
+    <div class="chat-more-left">
+      <span onClick="" class="js-more-option">
+        <i class="material-icons">fiber_manual_record</i>
+        <i class="material-icons">fiber_manual_record</i>
+        <i class="material-icons">fiber_manual_record</i>
+      </span>
+    </div><!--/.chat-more-left -->
+    <div class="chat-header-user">
+      <div class="chat-header-user_pic">
+        <span onClick="">
+          <img class="avatar contact" src="/images/diana-kraub.png">
+          <!-- <i class="material-icons">chat_bubble_outline</i> -->
+        </span>
+      </div>
+      <div class="chat-header-user_name">
+        <p class="title">Diana Krauß</p>
+        <p class="subtitle">Tax Adviser</p>
+      </div>
+    </div><!--/.chat-header-user -->
+    <div class="chat-header-user_close">
+      <i class="material-icons icon close">close</i>
+    </div>
+  </section>
+</template>
+
+<!-- LIVE -->
+<template name="chatLiveCon">
+    <div class="chat-live chat-live-contact animated fadeIn">
+      <div class="chat-line_bloc">
+        <div class="chat-live_question chat-live_question-contact animated fadeIn">
+          <p class="content">Hi Diana, Thanks for your time with the briefing earlier. As discussed, please see attached my statement of benefits.</p>
+          <!-- <small>1m ago</small> -->
+        </div>
+      </div>
+
+      <div class="chat-line_bloc contact">
+        <div class="chat-live_question chat-live_question-contact animated fadeIn">
+          <p class="content" style="height: 56px;">
+            <span class="icon"><i class="material-icons">picture_as_pdf</i></span>
+            <span class="text">Statement of benefits</span>
+          </p>
+          <!-- <small>1m ago</small> -->
+        </div>
+      </div>
+
+
+      <div class="chat-line_bloc ">
+        <div  class="chat-live_answer animated fadeIn">
+          <img class="avatar contact" src="/images/diana-kraub.png">
+          <p class="content">Thanks, Lisa. It was lovely speaking to you, as always. I will start preparing your Tax Return and I will be in touch soon if I need more information. Let me know if you need help with anything else in the meantime.</p>
+        </div><!--/.chat-live_welcome -->
+      </div>
+
+      <!-- <div class="chat-line_bloc contact">
+        <div  class="chat-live_question chat-live_question-contact">
+          <p class="content">
+            <span class="text">Thanks, Diana. I will do.</span>
+          </p>
+          <small>18h ago</small>
+        </div>
+      </div> -->
+
+
+    </div><!-- /.chat-live-->
+
+    <div class="chat-live_input-box input-contact">
+      <input class="input" autocapitalize="off" type="text" placeholder="Write a reply">
+      <button class="button-add" type="submit"><i class="material-icons">add_box</i></button>
+    </div><!--/._input-box -->
+</template>

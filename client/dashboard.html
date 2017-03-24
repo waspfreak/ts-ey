@@ -1,0 +1,44 @@
+<template name="dashboard">
+  {{>modal}}
+  {{> chatbot name="Lisa"}}
+  <div class="ey-container-main w-container">
+    <div class="row-main w-row">
+
+      <div class="col-nav-left w-col w-col-3">
+        {{> navLeftEmployee}}
+      </div>
+
+      <div class="ey-col-2_right w-col w-col-9">
+        <div class="ey-col-2_right__container">
+
+          <div class="ey-main-header--container">
+              {{> headerEmployee}}
+          </div>
+          <div class="">
+            {{>cardEmployeeStatus}}
+          </div>
+          <div class="ey-main-right-row w-row">
+            <div class="ey-main-right-col-1 w-col w-col-8">
+              <div class="div-righ-col-box1">
+                <div>
+                  {{> travelRisk}}
+                  {{> imigrationCard}}
+                  {{> travelServices}}
+                </div>
+              </div>
+            </div>
+            <div class="ey-main--col-2 w-col w-col-4">
+              {{> actionCardData
+                actionItemCard=actionItem1
+                titleValueCard=titleValue1
+              }}
+              <div>{{> contactCard contacts=contacts}}</div>
+              <div>{{> cardAssistant}}</div>
+              <!-- <div>{{> assistantCard assistant=employeeAssistant1}}</div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

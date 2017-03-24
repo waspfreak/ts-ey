@@ -1,0 +1,30 @@
+<template id="" name="taxMap">
+  <div class="card tax-map-container">
+    <div class="tax-map-left">
+      <img class="tax-map-img" src="images/tax-map-nitd.png">
+    </div>
+    <div class="tax-map-right">
+      {{> dropdownTaxMap}}
+      <div class="assessments">
+        Assessments: 2,615
+      </div>
+      <div class="risk-table">
+        <ul class="ey-card-tostal-coste-list">
+          <li class="ey-card-tostal-coste-list_item tax-title">
+            <span class="ey-card-tostal-coste-list_item__item tax_item">Item</span>
+            <span class="number-coste">No. of countries</span>
+          </li>
+          <li class="ey-card-tostal-coste-list_item tax_item">
+            <span class="i-box high-risk"></span>High risk <span class="number-coste value">77</span>
+          </li>
+          <li class="ey-card-tostal-coste-list_item tax_item">
+            <span class="i-box neutral"></span>Neutral <span class="number-coste value">249</span>
+          </li>
+          <li class="ey-card-tostal-coste-list_item tax_item">
+            <span class="i-box low-risk"></span>Low risk<span class="number-coste value">2,289</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>

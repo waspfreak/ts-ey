@@ -1,0 +1,43 @@
+<template id="" name="insightTalent">
+  <div class="card ey-card-container ey-card-container-large insight-graph-card">
+      <section class="section-insight-card group">
+        <div class="col span_1_of_4 insight-controls">
+          <div class="w-dropdown insight-main-dropdown">
+            <div class="dropdown_container">
+              {{#dropdownTrigger name="insightProgram"}}
+              <button>Talent<i class="dropdown-icon material-icons">arrow_drop_down</i></button>
+              {{/dropdownTrigger}}
+              {{#dropdown name="insightProgram" classes="dropdown--menu" align="left"}}
+              <ul class="dropdown__menu">
+                <li class="ey-dropdown-list_item_link w-dropdown-link open-dropdown" href="#">Industry analysis</li>
+                <li class="ey-dropdown-list_item_link w-dropdown-link open-dropdown" href="#">Program</li>
+              </ul>
+              {{/dropdown}}
+            </div>
+          </div>
+
+          <div class="insight-program-menu">
+            {{> iconTable tableData=tableData}}
+          </div>
+
+          <div class="insight-program-menu">
+            {{> dropdownListMenu dropdownData=dropdownData}}
+          </div>
+        </div>
+      	<div class="col span_3_of_4 graph-container">
+          <div class="graph-title">
+            Performance by grade
+          </div>
+          <div id="insight-talent-graph">
+          </div>
+      	</div>
+      </section>
+  </div>
+
+  <div class="insight-small-cards-row">
+    {{> insightSmall title="Program trend" text="There are 10% more high performing assignees than this time last year"}}
+    {{> insightSmall title="Program insight" text="Reducing extensions of low performing assignees by 50% could yield $20m…"}}
+    {{> insightSmall title="Workforce insight" text="Manager grade assignees have the greatest variance in performance"}}
+    {{> insightSmall title="Workforce trend" text="45% of Associate level assignees achieved promotion within 12 months of…"}}
+  </div>
+</template>

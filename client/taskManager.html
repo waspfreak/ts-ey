@@ -1,0 +1,301 @@
+<template id="" name="taskManager">
+{{> modalTaskManager}}
+  <div class="ey-container-main w-container">
+    <div class="row-main w-row">
+      <div class="col-nav-left w-col w-col-3">
+        <div class="ey-left-nav_box">
+            {{> navLeft}}
+        </div>
+      </div>
+      <div class="ey-col-2_right w-col w-col-9">
+        <div class="ey-col-2_right__container">
+         {{> chatbot name="Hans"}}
+          <div class="ey-main-header--container">
+              {{> header}}
+          </div>
+
+          <div class="ey-main-right-row w-row">
+            <div class="ey-main-right-col-1 w-col w-col-12">
+              <div class="taskManager">
+                <div class="ey-header-task_manager ">
+                  <div class="card card ey-card-container ey-card-container-large ey-header-task_links">
+                    <h2 class="ey-task-header_h2 ey-task-header-used-services ey-card-title ey-card-title_large">Frequently used services</h2>
+                      <div class="ey-task-btn-container">
+                        <a class="ey-btn-grey">
+                          <span class="ey-btn-grey_txt">Tax cost estimator</span>
+                        </a>
+                        <a class="ey-btn-grey modal-task-manager-btn-open"><!-- /.modal-task-manager-btn-open show hide modal -->
+                          <span class="ey-btn-grey_txt">Initiate new service</span>
+                        </a>
+                        <a class="ey-btn-grey">
+                          <span class="ey-btn-grey_txt">Compensation tool</span>
+                        </a>
+                        <a class="ey-btn-grey no-margin">
+                          <span class="ey-btn-grey_txt">Initiate payroll instruction</span>
+                        </a>
+                        <a class="ey-btn-grey">
+                          <span class="ey-btn-grey_txt">Tax liabilitiy and payments</span>
+                        </a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="table">
+                  <div class="ey-main-task-manager">
+                    <div class="ey-task-manager-row" style='border-bottom: 1px solid #ffe600'>
+                      <div class="ey-task-manager-wrapper-cel">
+                        <div class="ey-task-manager-wrapper-cel--text title"><div class="ey-header-task_h3">Task list</div></div>
+
+                        <div class="ey-task-manager-wrapper-cel--text">
+                          <!-- filter -->
+                          <div class="dropdown_task-manager ey__dropdown w-dropdown" data-delay="0">
+                            <div class="dropdown_container">
+                              {{#dropdownTrigger name="DropFilter"}}
+                                <button class="dropdown-btn">Filter<i class="dropdown-icon material-icons">arrow_drop_down</i></button>
+                              {{/dropdownTrigger}}
+
+                              {{#dropdown name="DropFilter" classes="dropdown--menu" align="left"}}
+                                <ul class="dropdown__menu dropdown-list">
+                                  <li >Open</li>
+                                  <li >Submitted</li>
+                                  <li >Pending</li>
+                                  <li >Closed</li>
+                                </ul>
+                              {{/dropdown}}
+                            </div>
+
+                          </div>
+
+
+                          <!-- filter -->
+                        </div>
+                        <!-- /.ey-task-manager-wrapper-cel text -->
+                        <div class="ey-task-manager-wrapper-cel--text btn-cel">
+                          <a href="#" class="ey-task-btn"><i class="material-icons" style="margin-left: 48px;">add_box</i></a>
+                          <!-- <a class="btn_1 ey-primary-button ey-task-btn_header w-button" href="#">Add</a> -->
+                        </div>
+                        <!-- /.ey-task-manager-wrapper-cel text -->
+                        <div class="ey-task-manager-wrapper-cel--text btn-cel" style="padding-left: 0 !important;;">
+                          <a href="#" class="ey-task-btn"><i class="material-icons" style="    margin-left: -13px;">create</i></a>
+                          <!-- <a class="ey-primary-button ey-task-btn_header w-button" href="#">Edit</a> -->
+                        </div>
+                        <!-- /.ey-task-manager-wrapper-cel text -->
+                      </div><!-- /.ey-task-manager-wrapper-cel -->
+                    </div><!-- /.ey-task-manager-row -->
+                    <div class="ey-task-manager-row">
+                      <div class="ey-task-manager-wrapper-cel">
+                        <div class="title-cel title"><a class="ey-task-manager-line_title" href="#">Action</a></div>
+                        <div class="title-cel date"><a class="ey-task-manager-line_title" href="#">Due</a><i class="date material-icons">arrow_upward</i></div>
+                        <div class="title-cel assigned"><a class="ey-task-manager-line_title" href="#">Assigned to</a></div>
+                        <div class="title-cel title-cel service"><a class="ey-task-manager-line_title" href="#">Service</a></div>
+                        <div class="title-cel status"><a class="ey-task-manager-line_title" href="#">Status</a></div>
+                        <div class="title-cel key-contact"><a class="ey-task-manager-line_title" href="#">Key contact</a></div>
+                        <div class="title-cel action"><a class="ey-task-manager-line_title" href="#">Action</a></div>
+                      </div><!-- /.ey-task-manager-wrapper-cel -->
+                    </div><!-- /.ey-task-manager-row -->
+                    <!--MODAL LINE ACTION -->
+                    <div class="ey-task-manager-row modal-line-action">
+                      <div class="ey-task-manager-wrapper-cel">
+                        <div class="title-cel title task-manager">
+                          <p class="ey-task-manager-line_txt">Service initiation request for Toby McManaman</p>
+                        </div>
+                        <div class="title-cel date">01/25/2017</div>
+                        <div class="title-cel assigned"><a class="ey-task-manager-line_txt link" href="#">Benji Oladapo</a></div>
+                        <div class="title-cel service"><p class="ey-task-manager-line_txt">Assignment</p></div>
+                          <div class="title-cel status">
+                            <p class="ey-task-manager-line_txt">Submitted</p>
+                          </div>
+                          <div class="title-cel key-contact">
+                            <a class="ey-task-manager-line_txt link" href="#">Emily Warren<br/> Mobility Manager</a>
+                          </div>
+                          <div class="title-cel action">
+                            <div class="ey-task-dropdow_action--container w-clearfix" data-delay="0">
+                              <div class="dropdown_container">
+                                {{#dropdownTrigger name="select1"}}
+                                  <button class="dropdown-btn select">Select</button>
+                                {{/dropdownTrigger}}
+                                {{#dropdown name="select1" classes="dropdown--menu select-task-manager" align="left"}}
+                                  <ul class="dropdown__menu dropdown-list">
+                                    <li >Approve</li>
+                                    <li >Reassign</li>
+                                    <li >View history</li>
+                                  </ul>
+                                {{/dropdown}}
+                              </div><!--/.dropdown_container -->
+                            </div>
+                          </div>
+                      </div><!-- /.ey-task-manager-wrapper-cel -->
+                    </div><!-- /.ey-task-manager-row -->
+                    <!--MODAL LINE ACTION END -->
+                    <div class="ey-task-manager-row">
+                      <div class="ey-task-manager-wrapper-cel">
+                        <div class="title-cel title task-manager">
+                          <p class="ey-task-manager-line_txt">Authorization approval for Alfonzo Fonzorelli</p>
+                        </div>
+                        <div class="title-cel date">01/27/2017</div>
+                        <div class="title-cel assigned"><a class="ey-task-manager-line_txt link" href="#">Nancy Frank</a></div>
+                        <div class="title-cel service"><p class="ey-task-manager-line_txt">Immigration</p></div>
+                          <div class="title-cel status">
+                            <p class="ey-task-manager-line_txt">Pending approval</p>
+                          </div>
+                          <div class="title-cel key-contact">
+                            <a class="ey-task-manager-line_txt link" href="#">Richard Fort <br/> Tax Manager</a>
+                          </div>
+                          <div class="title-cel action">
+                            <div class="ey-task-dropdow_action--container w-clearfix " data-delay="0">
+                              <div class="dropdown_container">
+                                {{#dropdownTrigger name="select2"}}
+                                  <button class="dropdown-btn select">Select</button>
+                                {{/dropdownTrigger}}
+                                {{#dropdown name="select2" classes="dropdown--menu select-task-manager" align="left"}}
+                                  <ul class="dropdown__menu dropdown-list">
+                                    <li >Approve</li>
+                                    <li >Reassign</li>
+                                    <li >View history</li>
+                                  </ul>
+                                {{/dropdown}}
+                              </div><!--/.dropdown_container -->
+                            </div>
+                          </div>
+                      </div><!-- /.ey-task-manager-wrapper-cel -->
+                    </div><!-- /.ey-task-manager-row -->
+
+                    <div class="ey-task-manager-row">
+                      <div class="ey-task-manager-wrapper-cel">
+                        <div class="title-cel title task-manager">
+                          <p class="ey-task-manager-line_txt">Out of scope approval</p>
+                        </div>
+                        <div class="title-cel date">01/29/2017</div>
+                        <div class="title-cel assigned"><a class="ey-task-manager-line_txt link" href="#">Stefan Wulf</a></div>
+                        <div class="title-cel service"><p class="ey-task-manager-line_txt">Relocation</p></div>
+                          <div class="title-cel status">
+                            <p class="ey-task-manager-line_txt">Pending approval</p>
+                          </div>
+                          <div class="title-cel key-contact">
+                            <a class="ey-task-manager-line_txt link" href="#">Emily Warren Mobility Manager</a>
+                          </div>
+                          <div class="title-cel action">
+                            <div class="ey-task-dropdow_action--container w-clearfix" data-delay="0">
+                              <div class="dropdown_container">
+                                {{#dropdownTrigger name="select3"}}
+                                  <button class="dropdown-btn select">Select</button>
+                                {{/dropdownTrigger}}
+                                {{#dropdown name="select3" classes="dropdown--menu select-task-manager" align="left"}}
+                                  <ul class="dropdown__menu dropdown-list">
+                                    <li >Approve</li>
+                                    <li >Reassign</li>
+                                    <li >View history</li>
+                                  </ul>
+                                {{/dropdown}}
+                              </div><!--/.dropdown_container -->
+                            </div>
+                          </div>
+                      </div><!-- /.ey-task-manager-wrapper-cel -->
+                    </div><!-- /.ey-task-manager-row -->
+                    <div class="ey-task-manager-row">
+                      <div class="ey-task-manager-wrapper-cel">
+                        <div class="title-cel title task-manager">
+                          <p class="ey-task-manager-line_txt">Compensation payment approval</p>
+                        </div>
+                        <div class="title-cel date">02/01/2017</div>
+                        <div class="title-cel assigned"><a class="ey-task-manager-line_txt link" href="#">Jennifer Keller</a></div>
+                        <div class="title-cel service"><p class="ey-task-manager-line_txt">Compensation</p></div>
+                          <div class="title-cel status">
+                            <p class="ey-task-manager-line_txt">Pending approval</p>
+                          </div>
+                          <div class="title-cel key-contact">
+                            <a class="ey-task-manager-line_txt link" href="#">Mark VanRees Payroll Manager</a>
+                          </div>
+                          <div class="title-cel action">
+                            <div class="ey-task-dropdow_action--container w-clearfix" data-delay="0">
+                              <div class="dropdown_container">
+                                {{#dropdownTrigger name="select4"}}
+                                  <button class="dropdown-btn select">Select</button>
+                                {{/dropdownTrigger}}
+                                {{#dropdown name="select4" classes="dropdown--menu select-task-manager" align="left"}}
+                                  <ul class="dropdown__menu dropdown-list">
+                                    <li >Approve</li>
+                                    <li >Reassign</li>
+                                    <li >View history</li>
+                                  </ul>
+                                {{/dropdown}}
+                              </div><!--/.dropdown_container -->
+                            </div>
+                          </div>
+                      </div><!-- /.ey-task-manager-wrapper-cel -->
+                    </div><!-- /.ey-task-manager-row -->
+                    <div class="ey-task-manager-row">
+                      <div class="ey-task-manager-wrapper-cel">
+                        <div class="title-cel title task-manager">
+                          <p class="ey-task-manager-line_txt">Document request</p>
+                        </div>
+                        <div class="title-cel date">02/01/2017</div>
+                        <div class="title-cel assigned"><a class="ey-task-manager-line_txt link" href="#">Surbhi Patel</a></div>
+                        <div class="title-cel service"><p class="ey-task-manager-line_txt">Immigration</p></div>
+                          <div class="title-cel status">
+                            <p class="ey-task-manager-line_txt">Open</p>
+                          </div>
+                          <div class="title-cel key-contact">
+                            <a class="ey-task-manager-line_txt link" href="#">Emily Warren Mobility Manager</a>
+                          </div>
+                          <div class="title-cel action">
+                            <div class="ey-task-dropdow_action--container w-clearfix" data-delay="0">
+                              <div class="dropdown_container">
+                                {{#dropdownTrigger name="select5"}}
+                                  <button class="dropdown-btn select">Select</button>
+                                {{/dropdownTrigger}}
+                                {{#dropdown name="select5" classes="dropdown--menu select-task-manager" align="left"}}
+                                  <ul class="dropdown__menu dropdown-list">
+                                    <li >Approve</li>
+                                    <li >Reassign</li>
+                                    <li >View history</li>
+                                  </ul>
+                                {{/dropdown}}
+                              </div><!--/.dropdown_container -->
+                            </div>
+                          </div>
+                      </div><!-- /.ey-task-manager-wrapper-cel -->
+                    </div><!-- /.ey-task-manager-row -->
+                    <div class="ey-task-manager-row">
+                      <div class="ey-task-manager-wrapper-cel">
+                        <div class="title-cel title task-manager">
+                          <p class="ey-task-manager-line_txt">Tax refund approval for Emanule Eboue</p>
+                        </div>
+                        <div class="title-cel date">02/06/2017</div>
+                        <div class="title-cel assigned"><a class="ey-task-manager-line_txt link" href="#">Edward Williams</a></div>
+                        <div class="title-cel service"><p class="ey-task-manager-line_txt">Tax</p></div>
+                          <div class="title-cel status">
+                            <p class="ey-task-manager-line_txt">Pending approval</p>
+                          </div>
+                          <div class="title-cel key-contact">
+                            <a class="ey-task-manager-line_txt link" href="#">Richard Fort <br/> Tax Manager</a>
+                          </div>
+                          <div class="title-cel action">
+                            <div class="ey-task-dropdow_action--container w-clearfix" data-delay="0">
+                              <div class="dropdown_container">
+                                {{#dropdownTrigger name="select6"}}
+                                  <button class="dropdown-btn select">Select</button>
+                                {{/dropdownTrigger}}
+                                {{#dropdown name="select6" classes="dropdown--menu select-task-manager" align="left"}}
+                                  <ul class="dropdown__menu dropdown-list">
+                                    <li >Approve</li>
+                                    <li >Reassign</li>
+                                    <li >View history</li>
+                                  </ul>
+                                {{/dropdown}}
+                              </div><!--/.dropdown_container -->
+                            </div>
+                          </div>
+                      </div><!-- /.ey-task-manager-wrapper-cel -->
+                    </div><!-- /.ey-task-manager-row -->
+                  </div><!-- /.ey-main-task-manager -->
+                </div><!--table -->
+              </div>
+            </div><!-- left main col-12-->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

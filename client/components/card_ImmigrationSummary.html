@@ -1,0 +1,56 @@
+<template  name="cardSummary">
+  <!-- summary card -->
+  <div class=" card-map-container summary">
+    <div class="card  map-card">
+        <div class="card-map">
+          <div class="card-map-col-left">
+            <img src="images/map.png" alt="map">
+          </div><!-- /.card-map-col-left -->
+
+          <div class="card-map-col-right">
+            <div class="w-dropdown">
+              <div class="dropdown_container">
+                {{#dropdownTrigger name="card-map-dropdown"}}
+                  <button class="dropdown-btn select">Summary <i class="dropdown-icon material-icons">arrow_drop_down</i></button>
+                {{/dropdownTrigger}}
+
+                {{#dropdown name="card-map-dropdown" classes="dropdown--menu" align="left"}}
+                  <ul class="dropdown__menu dropdown-list">
+                    <li class="link-dropdow-card-map">Trending</li>
+                    <li class="link-dropdow-card-map">Assessments</li>
+                  </ul>
+                {{/dropdown}}
+               </div>
+             </div>
+
+            <div class="card-map-data">
+              <p class="card-map-title">Global cost</p>
+              <p class="card-map-number">
+                <span class="number">$3.1m </span>
+                <span class="total-coste-secondary green">
+                  <i class="material-icons arrow_downward ">arrow_upward</i>
+                  <span class="total-coste-secondary-number">2.2%</span>
+              </span>
+             </p>
+            </div>
+
+            <div class="card-map-list-container">
+              <ul class="card-map-list">
+                <li class="card-map-list_item">320 work permit requests</li>
+                <li class="card-map-list_item">296 active applications</li>
+                <li class="card-map-list_item">25 destination countries</li>
+                <li class="card-map-list_item">14 nearing expiry</li>
+              </ul>
+            </div>
+
+          </div><!-- /.card-map-col-right -->
+        </div>
+      </div>
+    </div>
+
+      <div class="state-compliance">
+        {{> immigrationEmployee}}
+      </div>
+
+  <!-- summary card -->
+</template>

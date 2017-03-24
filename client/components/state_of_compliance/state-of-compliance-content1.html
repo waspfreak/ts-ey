@@ -1,0 +1,34 @@
+<template name="stateOfComplianceContent1">
+  <div class="state-compliance-content">
+    <div class="state-compliance-left ">
+      <div class="compliance-title">Tax<i class="material-icons">info</i></div>
+      <div id="soc-tax-graph"></div>
+    </div>
+    <div class="state-compliance-right">
+      <div class="compliance-title">Payroll<i class="material-icons">info</i></div>
+      <div class="soc-two-graphs">
+        <div class="soc-two-graphs-left">
+          <div class="soc-two-graphs-light-text">Total</div>
+          <div class="soc-two-graphs-light-text">compensation</div>
+          <div class="soc-two-graphs-big-text">$5.1M</div>
+        </div>
+        <div class="soc-two-graphs-right">
+          {{> socSubchart}}
+        </div>
+      </div>
+      <div class="ey-card-travel-bar-container w-clearfix">
+        <div class="ey-card-travel-bar soc-bar">
+          <div class="ey-card-travel-bar-label soc">Delivered: <span class="soc-dark">94%</span></div>
+          <div class="ey-card-travel-bar-soc"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="soc-nav-dots">
+    <div class="nav-dots">
+      <div class="nav-dot active"></div>
+      <div class="nav-dot"></div>
+      <div class="nav-dot"></div>
+    </div>
+  </div>
+</template>

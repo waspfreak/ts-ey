@@ -1,0 +1,207 @@
+@import "font.scss";
+
+//INSIGHT
+
+#insight-program-graph {
+  margin-top: 60px;
+  margin-left: -5px;
+
+  .c3-circles-data1, .c3-circles-data2, .c3-circles-data3 {
+    display: none;
+  }
+
+  //remove curvy line stroke
+  .c3-shapes.c3-shapes-data1.c3-lines.c3-lines-data1 > path {
+    stroke: rgba(255, 0, 0, 0) !important;
+    opacity: 0 !important;
+  }
+
+  .c3-shapes.c3-shapes-data2.c3-lines.c3-lines-data2 > path {
+    stroke: rgba(255, 0, 0, 0) !important;
+    opacity: 0 !important;
+  }
+
+
+  .c3-line-data3 {
+    display: none;
+  }
+
+
+  .c3-area {
+    opacity: 0.5 !important;
+  }
+
+  //remove axis ticks
+  .c3-axis .tick line {
+    display: none;
+  }
+
+
+  //tick text format
+  .c3-axis-x .tick {
+    font-size: 12px;
+    font-family: $font-light;
+    fill: $grey-tint2;
+  }
+
+  .c3-axis-y2 .tick {
+    font-size: 12px;
+    font-family: $font-light;
+    fill: $dark-grey;
+  }
+
+  //middle line divider
+  .c3-xgrid-line line {
+    stroke: $grey-tint2;
+  }
+}
+
+#insight-talent-graph {
+  margin-top: 75px;
+  margin-left: 8px;
+
+  //tick text format
+  .c3-axis-y .tick {
+    font-size: 12px;
+    font-family: $font-light;
+    fill: $grey-tint2;
+  }
+
+  .c3-axis-x .tick {
+    font-size: 14px;
+    font-family: $font-light;
+    fill: $dark-grey;
+  }
+}
+
+#insight-industry-analysis-graph {
+  margin-top: 80px;
+  margin-left: 20px;
+
+  //tick text format
+  .c3-axis-y2 .tick {
+    font-size: 12px;
+    font-family: $font-light;
+    fill: $dark-grey;
+  }
+
+  .c3-axis-x .tick {
+    font-size: 12px;
+    font-family: $font-light;
+    fill: $grey-tint2;
+  }
+
+  //middle line divider
+  .c3-ygrid-lines{
+    .c3-ygrid-line:first-of-type {
+      line {
+        stroke: $yellow;
+      }
+    }
+    .c3-ygrid-line:last-of-type {
+      line {
+        stroke: $black;
+      }
+    }
+  }
+}
+
+.graph-subtext {
+  font-size: 12px;
+  font-family: $font-light;
+  color: $dark-grey;
+
+  &.industry-analysis-graph-subtext {
+    margin-left: 84px;
+    margin-top: -8px;
+
+    .subtext-span {
+      margin-left: 113px;
+    }
+  }
+
+  &.program-graph-subtext {
+    margin-left: 101px;
+    margin-top: -8px;
+
+    .subtext-span {
+      margin-left: 203px;
+    }
+  }
+}
+
+
+//remove axis line
+.c3 {
+  path, line {
+    fill: none;
+    stroke: none;
+  }
+}
+
+
+//STATE OF COMPLIANCE
+#soc-tax-graph {
+  .c3-event-rect-0 {
+    background-color: #00A000;
+  }
+
+  //number labels (only for 2nd set of data)
+  .c3-target-data2 .c3-text {
+    font-size: 14px;
+    font-family: $font-light;
+    font-weight: 300;
+    fill: $grey !important;
+  }
+
+  .c3-bars-data2 {
+    .c3-bar-0 {
+      fill: $yellow !important;
+    }
+    .c3-bar-1 {
+      fill: $green !important;
+    }
+    .c3-bar-2 {
+      fill: $orange !important;
+    }
+    .c3-bar-3 {
+      fill: $red !important;
+    }
+  }
+
+  //bar left hand label style
+  .c3-axis-x .tick, .c3-axis-x-label {
+    font-size: 14px;
+    font-family: $font-light;
+    fill: $grey-alt !important;
+  }
+}
+
+#soc-subchart, #soc-subchart2 {
+  .c3-bars-data1 {
+    .c3-bar-0 {
+      fill: $grey-tint3 !important;
+    }
+    .c3-bar-1 {
+      fill: $grey-tint2 !important;
+    }
+    .c3-bar-2 {
+      fill: $grey-tint1 !important;
+    }
+    .c3-bar-3 {
+      fill: $grey !important;
+    }
+    .c3-bar-4 {
+      fill: $grey-alt !important;
+    }
+    .c3-bar-5 {
+      fill: $dark-grey !important;
+    }
+  }
+
+  .c3-axis-x .tick {
+    font-size: 12px;
+    font-family: $font-light;
+    fill: $grey-alt;
+  }
+}

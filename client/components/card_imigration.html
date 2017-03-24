@@ -1,0 +1,59 @@
+<template id="" name="imigrationCard">
+
+
+  <div class="card ey-card-container ey-card-container-large card-imi-1" data-ix="show-upload-model" id="upload-alert-card">
+
+    <div class="title-container">
+      <span class="title-col-100 ey-card-title-txt">Immigration
+        <span class="ey-assignment-alert-icon warning"><i class="material-icons red-color">warning</i></span>
+      </span>
+    </div>
+
+    <div class="ey-card-content">
+      <p class="ey-card-txt_color-dark">You have an outstanding data collection action </p>
+      <div class="ey-assignment-immigration-alert-container w-row">
+        <div class="" id="ey-upload-passport-link">
+          <div class="ey-assignment-immigration-alert-text w-embed">
+            <span>In order to process your work permit application please upload a copy of your passport or an existing work authorization document</span>
+            <a  class="ey-travel-card__btn">
+              <i class="material-icons icon-left">file_upload</i>
+              <span>Upload document </span>
+              <i class="material-icons icon-right">chevron_right</i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HIDE BOX Imigration card after upload document -->
+
+  <div class="card ey-card-container ey-card-container-large ey-card-container-upload-success card-imi-2 hidden" data-ix="show-upload-model" id="upload-alert-card-success" >
+
+    <div class="ey-card-title ey-card-title_large">
+      <div class="ey-card-title-txt">Immigration</div>
+    </div>
+    <div class="ey-card-content">
+      <div class="ey-card-travel-title" style="    margin-bottom: 20px;">Work permit status for your trip to Brazil</div>
+      <div class="ey-assignment-immigration-alert-container w-row">
+        <div class="w-col w-col-1">
+          <!-- <i class="material-icons warning">warning</i> -->
+          <i class="material-icons check green-color" style="margin-top: 0px;">check_circle</i>
+        </div>
+        <div class="w-col w-col-10">
+          <div class="ey-assignment-immigration-alert-text w-embed">
+            <!-- <span>You are not safe to travel for your next trip to Brazil. You will require a work permit before you can travel.</span>
+            <br><br> -->
+            <span>Passport scan uploaded successfully. We will send you a draft of your work permit application for review in the next 4 days</span>
+          </div>
+        </div>
+        <div class="ey-assignment-immigration-right-column w-col w-col-1"></div>
+      </div>
+    </div>
+    <div class="ey-card-large-footer">
+        <a class="ey-card-travel_blue-txt" href="#">View document center <i class="material-icons chevron_right">chevron_right</i></a>
+    </div>
+  </div>
+
+
+</template>

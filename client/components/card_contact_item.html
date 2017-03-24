@@ -1,0 +1,11 @@
+<template name="contactItem">
+  <a class="ey-card-item-container w-inline-block contact-item {{jsClass}}">
+    <div class="ey-card-item w-clearfix ey-card-item-contact {{#if last}}last{{/if}}">
+      {{#if imageUrl }}<div class="ey-card-item-icon-left"><img alt="card contact avatar" src={{imageUrl}}></div>{{/if}}
+      <img class="ey-card-item-content-right-icon" height="12" src="images/ic-keyboard-arrow-right_1.svg" width="7">
+      <div class="ey-card-item-content"><span>{{name}}<br></span></div>
+      <div class="ey-card-item-content ey-card-small"><span>{{jobTitle}}<br></span>
+      </div>
+    </div>
+  </a>
+</template>

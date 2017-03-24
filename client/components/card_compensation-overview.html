@@ -1,0 +1,49 @@
+<template id="" name="compensationOverview">
+  <div class="card contact_card ey-card-container state-compliance">
+    <div class="title-container">
+      <div class="title-col-60 ey-card-title-txt">Overview</div>
+      <div class="title-col-20 col-margin-right">
+          <div class="w-dropdown">
+            <div class="dropdown_container">
+              {{#dropdownTrigger name="DropdownYTD"}}
+                <button class="dropdown-btn select">YTD <i class="dropdown-icon material-icons">arrow_drop_down</i></button>
+              {{/dropdownTrigger}}
+
+              {{#dropdown name="DropdownYTD" classes="dropdown--menu" align="left"}}
+                <ul class="dropdown__menu dropdown-list">
+                  <li class="ey-dropdown-list_item_link w-dropdown-link" href="#">Previous year</li>
+                  <li class="ey-dropdown-list_item_link w-dropdown-link" href="#">Quarter</li>
+                </ul>
+              {{/dropdown}}
+            </div>
+          </div>
+        </div>
+
+        <div class="title-col-20">
+          <div class="w-dropdown">
+            <div class="dropdown_container">
+              {{#dropdownTrigger name="DropdownEMEA"}}
+                <button class="dropdown-btn select">EMEA <i class="dropdown-icon material-icons">arrow_drop_down</i></button>
+              {{/dropdownTrigger}}
+
+              {{#dropdown name="DropdownEMEA" classes="dropdown--menu" align="left"}}
+                <ul class="dropdown__menu dropdown-list">
+                  <li class="ey-dropdown-list_item_link w-dropdown-link" href="#">Global</li>
+                  <li class="ey-dropdown-list_item_link w-dropdown-link" href="#">APAC</li>
+                  <li class="ey-dropdown-list_item_link last w-dropdown-link" href="#">Americas</li>
+                </ul>
+              {{/dropdown}}
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="compensation-container overview">
+      <div class="compensation-overview-left">
+        <img class="compensation-overview-img" src="images/compensation-overview.png">
+      </div>
+      <div class="compensation-overview-right">
+        {{> toggleTable}}
+      </div>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,31 @@
+<template id="" name="travelSummary">
+  <div class="card travel-summary tax-map-container">
+    <div class="tax-map-left">
+      <img class="tax-map-img" src="images/map-travel-summary.png">
+    </div>
+    <div class="tax-map-right">
+      {{> dropdownBusinessTraveler}}
+      <div class="travel-summary__global-cost-title">
+        Global cost
+      </div>
+      <div class="travel-summary__global-cost">
+        <div class="travel-summary__global-cost-value">
+          $12.4m
+        </div>
+        <div class="travel-summary__global-cost-icon">
+          <i class="material-icons i-down-arrow">arrow_downward</i>
+        </div>
+        <div class="travel-summary__global-cost-percent">
+          0.3%
+        </div>
+      </div>
+
+      <div class="travel-summary__details">
+        <div>4,341 trips</div>
+        <div>982 travelers</div>
+        <div>53 at risk for tax</div>
+        <div>22 at risk for immigration</div>
+      </div>
+    </div>
+  </div>
+</template>

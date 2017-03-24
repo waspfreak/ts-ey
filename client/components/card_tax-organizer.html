@@ -1,0 +1,73 @@
+<template name="taxOrganizer">
+  <div class="card ey-card-container ey-card-container-large tax-organizer">
+
+    <div class="title-container with-download">
+      <span class="ey-card-title-txt">Tax organizer</span>
+
+      <div class="w-dropdown">
+        <div class="dropdown_container">
+          {{#dropdownTrigger name="saveDropdown"}}
+          <button class="dropdown-btn select"><i class="material-icons icon save-cal-icon">get_app</i></button>
+          {{/dropdownTrigger}}
+
+          {{#dropdown name="saveDropdown" classes="dropdown--menu" align="left"}}
+          <ul class="dropdown__menu dropdown-list">
+            <li class="monthly-view-option">Google</li>
+            <li class="monthly-view-option">iCal</li>
+            <li class="monthly-view-option">Outlook</li>
+          </ul>
+          {{/dropdown}}
+        </div>
+      </div>
+    </div>
+
+        <p class="ey-card-travel_grey-txt extra-padding">You need to complete your tax organizer by 31st December 2017. Based on the information we already have, we were able to complete <span class="update-number-next-fir">70%</span><span class="update-number-next-sec">74%</span>  of your tax organizer</p>
+
+        <span class="tax-organizer_dropdown dropdown-progress extra-padding">Progress
+          <i class="dropdown-ico material-icons up upTax">arrow_drop_up</i>
+          <i class="dropdown-ico material-icons down downTax hidden">arrow_drop_down</i>
+        </span>
+        <div class="tax-organizer-bar">
+          <div class="tax-organizer-bar_yellow ">
+            <span class="update-number">70% Complete</span>
+            <span class="update-number-next">74% Complete</span>
+          </div>
+        </div>
+
+        <div class="tax-organizer_main-content ">
+          <div class="main-box">
+              {{> taxOrganizerlist taxOrganizerlistCard=item}}
+          </div>
+
+          <div class="tax-organizer_doc-validation ">
+          {{> textBox title="Document validation"
+                      content="The following documents uploaded to your document center can be used to further complete your tax organizer:"}}
+            <div class="tax-organizer_yellow-btn">
+              {{> btnYellowFull icon="perm_identity" title="Identification"}}
+              {{> btnYellowFull modalClass="modal-open" extraClass="open-modal close-btn" icon="attach_money" title="Wage statements"}}
+              {{> btnYellowFull icon="assignment" title="Certificate of coverage"}}
+            </div>
+          </div>
+            {{> textBox title="Book a briefing"
+                        link="Schedule a call with Diana "
+                        content="to help you complete the remainder of the tax organizer"}}
+        </div>
+
+        {{>linkFooterCard title="Access tax organizer"}}
+
+   </div>
+</template>
+
+
+
+<template id="" name="taxOrganizerlist">
+  <ul class="tax-organizer-list">
+    {{#each item}}
+      {{> taxOrganizerlistItem}}
+    {{/each}}
+  </ul>
+</template>
+
+<template id="" name="taxOrganizerlistItem">
+  <li class="tax-organizer-list_item"><span onClick=""><i class="icon material-icons {{Iconcolor}}">{{icon}}</i> {{title}} <i class="material-icons chevron_right">chevron_right</i></span></li>
+</template>

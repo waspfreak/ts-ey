@@ -1,0 +1,33 @@
+<template name="compensation">
+
+  <div class="dashboard-head-mobility ey-container-main w-container">
+    <div class="row-main w-row">
+      <div class="col-nav-left w-col w-col-3">
+        <div class="ey-left-nav_box">
+          {{> navLeftHeadMob}}
+        </div>
+      </div>
+      <div class="ey-col-2_right w-col w-col-9">
+        <div class="ey-col-2_right__container">
+           {{> chatbot name="Emma"}}
+          <div class="ey-main-header--container">
+            {{> header}}
+          </div>
+          <div class="your-program">
+            {{>compensationOverview}}
+          </div>
+          <div class="ey-main-right-row w-row">
+            <div class="ey-main-right-col-1 w-col w-col-8">
+              <div class="state-compliance">
+                {{> dataAggregation}}
+              </div>
+            </div><!-- main col-->
+            <div class="ey-main--col-2 w-col w-col-4">
+              <div>{{> servicesAndTools}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

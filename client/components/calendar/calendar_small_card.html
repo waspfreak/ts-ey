@@ -1,0 +1,20 @@
+<template name="calendarSmall">
+  <div class="card-small-container calendar-small">
+    <div class="insight-title card-small-title">
+      {{title}}
+      {{#if icon}}
+        <span class="material-icons info-icon">info</span>
+      {{/if}}
+    </div>
+    <div class="card-small-text">
+      {{text}}
+    </div>
+    <div class="card-small-action">
+      {{#if activated}}
+        <div class="card-small-action-text activated">Activated</div>
+      {{else}}
+        <div class="card-small-action-text {{#if outlook}}outlook-link{{/if}}">Connect <i class="material-icons chevron_right">chevron_right</i></div>
+      {{/if}}
+    </div>
+  </div>
+</template>

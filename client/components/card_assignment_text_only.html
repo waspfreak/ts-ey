@@ -1,0 +1,35 @@
+<template id="" name="assignmentTextOnly">
+  <div class="card ey-card-container ey-card-container-large">
+    <div class="title-container with-download">
+      <span class="ey-card-title-txt">Assignment</span>
+
+      <div class="w-dropdown">
+        <div class="dropdown_container">
+          {{#dropdownTrigger name="saveDropdown"}}
+          <button class="dropdown-btn select"><i class="material-icons icon save-cal-icon">get_app</i></button>
+          {{/dropdownTrigger}}
+
+          {{#dropdown name="saveDropdown" classes="dropdown--menu" align="left"}}
+          <ul class="dropdown__menu dropdown-list">
+            <li class="monthly-view-option">Google</li>
+            <li class="monthly-view-option">iCal</li>
+            <li class="monthly-view-option">Outlook</li>
+          </ul>
+          {{/dropdown}}
+        </div>
+      </div>
+    </div>
+
+    <div class="ey-card-content">
+        <p class="ey-card-travel_grey-txt">
+          Your assignment in Brazil is due to end on 25 June 2019<br>
+          <a href="#" class="ey-risks-card-link no-link-style-blue">Please review your objectives and complete your self-assessment</a>
+        </p>
+    </div>
+
+    <div class="ey-card-large-footer">
+      <a href="#" class="ey-card-travel_blue-txt">View assignment objectives <i class="material-icons chevron_right">chevron_right</i></a>
+    </div>
+
+  </div>
+</template>

@@ -1,0 +1,42 @@
+<template id="" name="taxMapDeadlines">
+  <div class="card tax-map-container">
+    <div class="tax-map-left">
+      <img class="tax-map-img" src="images/tax-map-deadlines.png">
+    </div>
+    <div class="tax-map-right">
+      <div class="w-dropdown">
+        <div class="dropdown_container">
+          {{#dropdownTrigger name="testDropdown6"}}
+            <button class="dropdown-btn select">Deadlines <i class="dropdown-icon material-icons">arrow_drop_down</i></button>
+          {{/dropdownTrigger}}
+
+          {{#dropdown name="testDropdown6" classes="dropdown--menu" align="left"}}
+            <ul class="dropdown__menu dropdown-list">
+              <span class="ey-dropdown-list_item_link w-dropdown-link" onClick="">National income tax FY17</span>
+              <span class="ey-dropdown-list_item_link w-dropdown-link" onClick="">Income tax withholding</span>
+              <span class="ey-dropdown-list_item_link w-dropdown-link" onClick="">Employee tax return</span>
+              <span class="ey-dropdown-list_item_link w-dropdown-link" onClick="">Employee social tax</span>
+              <span class="ey-dropdown-list_item_link last w-dropdown-link" onClick="">Employer social tax</span>
+            </ul>
+          {{/dropdown}}
+        </div>
+      </div>
+
+
+      <div class="tax-map-deadline-content">
+        <div class="tax-map-right-container">
+          <div class="tax-map-right-text">UK - 31 Jan</div>
+          <div class="tax-map-right-light">Upcoming policy change</div>
+        </div>
+        <div class="tax-map-right-container">
+          <div class="tax-map-right-text">USA - 31 Apr</div>
+          <div class="tax-map-right-light">340 amber assessments</div>
+        </div>
+        <div class="tax-map-right-container">
+          <div class="tax-map-right-text">EGY - 31 Jul</div>
+          <div class="tax-map-right-light">12 incomplete tax organizer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

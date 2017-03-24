@@ -1,0 +1,67 @@
+<template id="" name="actionCardData">
+  <div class="card ey-card-container">
+    <div class="title-container"><span class="ey-card-title-txt">Actions</span></div>
+      <section class="card_main-box timeline">
+        <div class="drop-action-container">
+            {{#each titleValueCard}}
+             {{> titleValue }}
+            {{/each}}
+
+          <div class="drop-action-main dropLink2 hidden margin-close margin">
+            <ul class="drop-action-list">
+              {{#each actionItemCard}}
+                  {{> actionItem}}
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+        <!--/.block -->
+
+        <!--/.secondary dropdown -->
+          {{#if ShowSecDropCard}}
+            {{> dropBlocValueSec }}
+          {{/if}}
+        <!--/.secondary dropdown -->
+
+    </section>
+  </div>
+  </template>
+
+<!-- Template Secondary Dropdown-->
+  <template name="dropBlocValueSec">
+      <span class="divider if-open "></span>
+      <div class="drop-action-container if-close">
+
+          {{#each titleValueCardSec}}
+           {{> titleValueSec }}
+          {{/each}}
+
+        <div class="drop-action-main dropLink1 hidden margin-close margin">
+          <ul class="drop-action-list">
+            {{#each actionItemCardSec}}
+                {{> actionItemSec}}
+            {{/each}}
+          </ul>
+        </div>
+      </div><!--/.block -->
+  </template>
+
+<!-- Template Title First Block-->
+  <template name="titleValue">
+    <p class="subtitle dropdownTitle{{id}}">
+      <i class="timeline-icon sub-title material-icons {{colorIcon}} icon-change">radio_button_checked</i>
+      <i class="dropdown-icon material-icons up{{id}} hidden " style="margin-top: -4px;">arrow_drop_up</i>
+      <i class="dropdown-icon material-icons down{{id}} "  style="margin-top: -4px;">arrow_drop_down</i>
+      <span class="subtitle-text">{{title}}</span>
+    </p>
+  </template>
+
+<!-- Template Title Secondary Block-->
+  <template id="" name="titleValueSec">
+    <p class="subtitle dropdownTitle{{id}}">
+      <i class="timeline-icon sub-title material-icons {{colorIcon}} icon-change">radio_button_checked</i>
+      <i class="dropdown-icon material-icons up{{id}} hidden">arrow_drop_up</i>
+      <i class="dropdown-icon material-icons down{{id}}">arrow_drop_down</i>
+      <span class="subtitle-text">{{title}}</span>
+    </p>
+  </template>

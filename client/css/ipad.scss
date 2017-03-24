@@ -1,0 +1,66 @@
+
+@media only screen and (max-device-width: 768px)  and (orientation : portrait) {
+    .ey-main-header--container{
+      margin-left: -4px !important;
+    }
+
+    .home {
+      background: linear-gradient(to bottom, rgba(83, 83, 83, 0.6) 0%, rgba(10, 10, 10, 0.7) 100%);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 100%;
+      width: 112%;
+      height: 113%;
+    }
+
+    .full-container .login-home-container{
+      max-width: 768px;
+    }
+
+    .w-container {
+      max-width: 768px;
+      overflow: hidden;
+    }
+    /*Dashboard*/
+    .card{
+      &.ey-employee-status-card.w-clearfix{
+        width: 500px;
+      }
+    }
+    .ey-employee-status-card-middle-col{
+      width: 100%;
+      overflow: hidden;
+    }
+    .ey-employee-status-card--row{
+      width: 100%;
+      min-width: 300px;
+    }
+    .ey-main-right-col-1.w-col.w-col-8{
+      width: 100%;
+    }
+    .ey-col-2_right.w-col.w-col-9{
+      width: 70%;
+      margin-left: -9px;
+    }
+    .ey-col-2_right__container {
+      width: 100%;
+      max-width: 534px;
+    }
+
+    .header__left-container {
+      float: left;
+      position: relative;
+      max-width: 560px;
+      height: 100%;
+      width: 60%!important;
+    }
+    .header__right-container{
+      width: 40% !important;
+    }
+
+    /*CHATBOT*/
+    .chat-btn_container{
+      bottom: 0;
+    }
+
+}

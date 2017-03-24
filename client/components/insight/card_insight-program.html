@@ -1,0 +1,48 @@
+<template id="" name="insightProgram">
+  <div class="card ey-card-container ey-card-container-large insight-graph-card">
+    <section class="section-insight-card group">
+      <div class="col span_1_of_4 insight-controls">
+        <div class="w-dropdown insight-main-dropdown">
+          <div class="dropdown_container">
+            {{#dropdownTrigger name="insightProgram"}}
+            <button>Program<i class="dropdown-icon material-icons">arrow_drop_down</i></button>
+            {{/dropdownTrigger}}
+            {{#dropdown name="insightProgram" classes="dropdown--menu" align="left"}}
+            <ul class="dropdown__menu">
+              <li class="ey-dropdown-list_item_link w-dropdown-link open-dropdown">Talent</li>
+              <li class="ey-dropdown-list_item_link w-dropdown-link open-dropdown">Industry analysis</li>
+            </ul>
+            {{/dropdown}}
+          </div>
+        </div>
+
+        <div class="insight-program-menu">
+          {{> iconTable tableData=tableData}}
+        </div>
+
+        <div class="insight-program-menu">
+          {{> dropdownListMenu dropdownData=dropdownData}}
+        </div>
+      </div>
+      <div class="col span_3_of_4 graph-container">
+        <div class="graph-title">
+          Average total cost per mobile employee
+        </div>
+        <div id="insight-program-graph"></div>
+        <div class="graph-subtext program-graph-subtext">
+          2015
+          <span class="subtext-span">
+            2016
+          </span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="insight-small-cards-row">
+    {{> insightSmall title="Program trend" text="Cost per employee has risen in all regions by 15% in the last 2 financial years"}}
+    {{> insightSmall title="BU insight" text="Cost per employee is 6.9% higher per head in Marketing business unit than average…"}}
+    {{> insightSmall title="Regional insight" text="APAC cost per head is 7.1% higher than the average cost; there is a potential saving…"}}
+    {{> insightSmall title="Workforce trend" text="Total average cost for Senior Managers has been declining at an …   "}}
+  </div>
+</template>

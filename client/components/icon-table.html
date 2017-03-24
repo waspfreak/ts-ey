@@ -1,0 +1,12 @@
+<template id="" name="iconTable">
+  <div class="icon-table">
+    <ul class="icon-table-list">
+      <li class="icon-table-list-header">
+        Item
+      </li>
+      {{#each tableData}}
+       {{> iconTableItem}}
+      {{/each}}
+    </ul>
+  </div>
+</template>

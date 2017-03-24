@@ -1,0 +1,22 @@
+<template id="" name="immigration">
+  <div class="ey-container-main w-container">
+    <div class="row-main w-row">
+      <div class="col-nav-left w-col w-col-3">
+        <div class="ey-left-nav_box">
+            {{> navLeftHeadMob}}
+        </div>
+      </div>
+      <div class="ey-col-2_right w-col w-col-9">
+        <div class="ey-col-2_right__container">
+         {{> chatbot name="Emma"}}
+          <div class="ey-main-header--container">
+              {{> header}}
+          </div>
+            <!-- Insight Grafic Cards -->
+            {{> Template.dynamic template=cardMap}}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

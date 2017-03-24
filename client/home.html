@@ -1,0 +1,33 @@
+<template name="home" class="home">
+  <script> stormpath.remove();</script>  <!--/remove login box if user is log in -->
+  <div class="full-container">
+    <div class="login-home-container">
+      <img class="ey-login-header-image" src="images/logo.svg">
+      <div class="ey-login-header-title">Mobility Services</div>
+    </div>
+  </div>
+  <div class="full-container">
+    <div class="login-home-container">
+      <a class="ey-login-profile-container w-inline-block w-preserve-3d" href="/loginEmployee">
+        <!-- <img class="ey-login-employee-image-selected" src="images/profile-1-on.png"> -->
+        <img class="ey-login-profile-image" src="images/profile-1.png">
+        <div class="ey-login-profile-text">Employee<br/>&nbsp;</div>
+      </a>
+      <a class="ey-login-profile-container w-inline-block" href="/loginMobility">
+        <!-- <img class="ey-login-employee-image-selected" src="images/profile-3-on.png"> -->
+        <img class="ey-login-profile-image" src="images/profile-2.png">
+        <div class="ey-login-profile-text">Operational corporate user</div>
+      </a>
+      <a class="ey-login-profile-container w-inline-block" href="/loginHeadMobility">
+        <!-- <img class="ey-login-employee-image-selected" src="images/profile-2-on.png"> -->
+        <img class="ey-login-profile-image" src="images/profile-3.png">
+        <div class="ey-login-profile-text">Strategic corporate user</div>
+      </a>
+    </div>
+  </div>
+  <!-- <div class="ey-login-profiles-container">
+    no
+  </div> -->
+  <img class="ey-login-background-image" src="images/home-background-diagonal-shape.svg">
+  <!-- <div class="ey-login-footer"></div> -->
+</template>

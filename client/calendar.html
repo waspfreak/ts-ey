@@ -1,0 +1,22 @@
+<template name="calendar">
+  {{> modalSources}}
+  {{> modalDate}}
+  <div class="ey-container-main w-container">
+    <div class="row-main w-row">
+      <div class="col-nav-left w-col w-col-3">
+        {{> navLeftEmployee}}
+      </div>
+      <div class="ey-col-2_right w-col w-col-9">
+        <div class="ey-col-2_right__container">
+          {{> chatbot name="Lisa"}}
+          <div class="ey-main-header--container">
+            {{> headerEmployee}}
+          </div>
+          <div>
+            {{> Template.dynamic template=cardMap}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

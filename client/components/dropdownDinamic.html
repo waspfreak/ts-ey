@@ -1,0 +1,20 @@
+<template id="" name="dropdownDinamic">
+
+  <div class="w-dropdown">
+    <div class="dropdown_container">
+      {{#dropdownTrigger name="testDropdown6"}}
+        <button class="dropdown-btn select">Dropdown with data <i class="dropdown-icon material-icons">arrow_drop_down</i></button>
+      {{/dropdownTrigger}}
+
+      {{#dropdown name="testDropdown6" classes="dropdown--menu" align="left"}}
+        <ul class="dropdown__menu dropdown-list">
+            <li>selection 1</li>
+            <li>selection 1</li>
+            <li>selection 1</li>
+        </ul>
+      {{/dropdown}}
+    </div>
+  </div>
+
+
+</template>

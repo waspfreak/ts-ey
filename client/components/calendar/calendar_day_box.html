@@ -1,0 +1,14 @@
+<template name="dayBox">
+  {{#if sunday}}
+    <div class="day-box sunday">
+      <div class="sunday-time">{{sunday.time}}</div>
+    </div>
+  {{else}}
+    <div class="day-box {{boxType}}">
+      <div class="location">{{location}}</div>
+      {{#if activity}}
+      <div class="activity">{{activity}}</div>
+      {{/if}}
+    </div>
+  {{/if}}
+</template>

@@ -1,0 +1,31 @@
+<template id="" name="permanentRisk">
+  <div class="card permanent-risk tax-map-container">
+    <div class="tax-map-left">
+    <div class="permanent-risk__zoom-in-hover-button"></div>
+      <img class="tax-map-img" src="images/map-color.png">
+    </div>
+    <div class="tax-map-right">
+      {{> dropdownBusinessTraveler}}
+      <div class="permanent-risk__title">
+        Corporate tax exposure
+      </div>
+      <div class="risk-table permanent-risk__table">
+        <ul class="ey-card-tostal-coste-list">
+          <li class="ey-card-tostal-coste-list_item tax-title">
+            <span class="ey-card-tostal-coste-list_item__item tax_item">Item</span>
+            <span class="number-coste">No. of countries</span>
+          </li>
+          <li class="ey-card-tostal-coste-list_item tax_item">
+            <span class="i-box high-risk"></span>High risk <span class="number-coste value">3</span>
+          </li>
+          <li class="ey-card-tostal-coste-list_item tax_item">
+            <span class="i-box neutral"></span>Neutral <span class="number-coste value">2</span>
+          </li>
+          <li class="ey-card-tostal-coste-list_item tax_item">
+            <span class="i-box low-risk"></span>Low risk<span class="number-coste value">8</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>

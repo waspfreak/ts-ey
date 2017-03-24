@@ -1,0 +1,18 @@
+@import "font.scss";
+
+.card{
+  .title{
+    color: $grey-alt;
+    font-family: $font-regular;
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .content-text{
+    color: $grey-alt;
+    font-size: 14px;
+    font-family: $font-light;
+    margin-bottom: 17px;
+  }
+}

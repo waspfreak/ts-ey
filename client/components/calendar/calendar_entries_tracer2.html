@@ -1,0 +1,76 @@
+<template name="calendarEntriesTracer2">
+  <div class="calendar-entries-content">
+    <div class="text-container">
+      <div class="text">
+        We have identified a location from your device that can help us complete your calendar for you.
+      </div>
+      <div class="text">
+        You can choose to <strong>Add</strong>, <strong>Ignore</strong> permanently or <strong>Skip</strong> this
+        instance
+      </div>
+    </div>
+    <div class="calendar-entries-form-container">
+      <div class="entries-form">
+        <div class="entries-form-title">TRACer</div>
+        <div class="form-field">
+          <div class="input-form">
+            <div class="w-clearfix w-dropdown" data-delay="0">
+              <label class="label">Activity</label>
+              <div class="dropdown_container">
+                {{#dropdownTrigger name="Policy-Type"}}
+                <button class="dropdown-btn">Work <i class="dropdown-icon material-icons">arrow_drop_down</i>
+                </button>
+                {{/dropdownTrigger}}
+
+                {{#dropdown name="Policy-Type" classes="dropdown--menu" align="left"}}
+                <ul class="dropdown__menu dropdown-list">
+                  <li>Non-Work</li>
+                  <li>Travel</li>
+                  <li>Sick</li>
+                  <li>Holiday</li>
+                </ul>
+                {{/dropdown}}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-field">
+          <div class="input-form">
+            <label class="label">Subject</label>
+            <div class="input">Business trip</div>
+          </div>
+        </div>
+        <div class="form-field">
+          <div class="input-form">
+            <label class="label">Location</label>
+            <div class="input">New York</div>
+          </div>
+        </div>
+        <div class="form-field">
+          <div class="input-form">
+            <label class="label">Start date</label>
+            <div class="input">December 10, 2018 - AM <span
+                class="material-icons calendar-entries-icon">insert_invitation</span></div>
+          </div>
+        </div>
+        <div class="form-field">
+          <div class="input-form">
+            <label class="label">End date</label>
+            <div class="input">December 10, 2018 - PM <span
+                class="material-icons calendar-entries-icon">insert_invitation</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="bubble-container">
+        <div class="button-container">
+          <a class="ey-btn-grey add-tracer-entry"><span class="ey-btn-grey_txt">Add</span></a>
+          <a class="ey-btn-grey"><span class="ey-btn-grey_txt">Ignore</span></a>
+          <a class="ey-btn-skip"><span class="ey-btn-grey_txt">Skip</span></a>
+        </div>
+        <div class="suggestion">
+          <div class="suggestion-text"><i class="material-icons suggestion-icon">check_box</i>We can complete 9 entries based on this event</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

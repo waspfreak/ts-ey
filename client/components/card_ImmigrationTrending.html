@@ -1,0 +1,38 @@
+<template id="" name="cardTrending">
+  <!-- Trending card -->
+  <div class=" card-map-container trending">
+    <div class="card  map-card">
+        <div class="card-map">
+          <div class="card-map-col-left">
+            <img src="images/map2.png" alt="map">
+          </div><!-- /.card-map-col-left -->
+
+          <div class="card-map-col-right">
+            <div class="w-dropdown">
+              <div class="dropdown_container">
+                {{#dropdownTrigger name="map-card-dropdown"}}
+                  <button class="dropdown-btn select">Trending <i class="dropdown-icon material-icons">arrow_drop_down</i></button>
+                {{/dropdownTrigger}}
+
+                {{#dropdown name="map-card-dropdown" classes="dropdown--menu" align="left"}}
+                  <ul class="dropdown__menu dropdown-list">
+                    <li class="link-dropdow-card-map">Assessments</li>
+                    <li class="link-dropdow-card-map">Summary</li>
+                  </ul>
+                {{/dropdown}}
+               </div>
+             </div>
+
+            <div class="trending-txt">
+              <p>US State Immigration has announced new immigration controls. Travel restrictions may affect 3 of your employees</p>
+            </div>
+
+          </div><!-- /.card-map-col-right -->
+        </div>
+      </div>
+    </div>
+      <div class="state-compliance">
+        {{> immigrationEmployeeTrending}}
+      </div>
+  <!-- trending card -->
+</template>

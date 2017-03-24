@@ -1,0 +1,19 @@
+<template name="dropdownTaxMapEtr">
+	<div class="w-dropdown">
+		<div class="dropdown_container">
+		  {{#dropdownTrigger name="testDropdown7"}}
+		    <button class="dropdown-btn select">Employee tax return <i class="dropdown-icon material-icons">arrow_drop_down</i></button>
+		  {{/dropdownTrigger}}
+
+		  {{#dropdown name="testDropdown7" classes="dropdown--menu" align="left"}}
+		    <ul class="dropdown__menu dropdown-list">
+					<li class="ey-dropdown-list_item_link w-dropdown-link" href="#">National income tax FY17</li>
+					<li class="ey-dropdown-list_item_link w-dropdown-link" href="#">Income tax withholding</li>
+					<li class="ey-dropdown-list_item_link w-dropdown-link" href="#">Employee social tax</li>
+					<li class="ey-dropdown-list_item_link w-dropdown-link" href="#">Employer social tax</li>
+					<li class="ey-dropdown-list_item_link last w-dropdown-link" href="#">Deadlines</li>
+		    </ul>
+		  {{/dropdown}}
+		</div>
+</div>
+</template>
